@@ -6,3 +6,6 @@ repositories/pthread/
 
 # Mac files
 .DS_Store
+
+# XCode user files
+xcuserdata/
