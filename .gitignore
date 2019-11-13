@@ -1,0 +1,8 @@
+# Repositories folders
+repositories/curl/
+repositories/openssl/
+repositories/xtralife-sdk/
+repositories/pthread/
+
+# Mac files
+.DS_Store
