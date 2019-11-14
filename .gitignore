@@ -9,3 +9,9 @@ repositories/pthread/
 
 # XCode user files
 xcuserdata/
+
+
+# Gradle files
+!gradle-wrapper.jar
+.gradle
+/build/
