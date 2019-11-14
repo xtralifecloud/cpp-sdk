@@ -1,0 +1,58 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion '29.0.2'
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 29
+    }
+
+	externalNativeBuild {
+        ndkBuild {
+            path 'jni/Android.mk'
+        }
+    }
+
+    sourceSets {
+		main {
+			manifest.srcFile 'AndroidManifest.xml'
+
+            aidl.srcDirs = ['../../../../sources/PlatformSpecific/Android/Aidl']
+            java.srcDirs = ['../../../../sources/PlatformSpecific/Android/Java']
+        }
+    }
+}
+
+// Tasks to build Android repository once assemble task is finished
+task installHeadersToRepository(type: Copy) {
+    from "${project.rootDir}/../../sources/include"
+    into "${project.rootDir}/../../repositories/xtralife/include"
+
+    doLast {
+        println "--- Copying include folder ---"
+    }
+}
+build.finalizedBy(installHeadersToRepository)
+
+android.libraryVariants.all { variant ->
+    def variantName = variant.name.capitalize()
+    def copyTaskName = "copy${variantName}BinariesToRepository"
+    def assembleTaskName = "assemble${variantName}"
+    task(copyTaskName, type: Copy) {
+        variant.outputs.each { output ->
+            from("${project.rootDir}/${project.name}/build/outputs/aar") {
+                include output.outputFile.name
+            }
+            rename output.outputFile.name, 'xtralife.aar'
+        }
+        into "${project.rootDir}/../../repositories/xtralife/libs/Android/${variantName}"
+
+        doLast {
+            println "--- Copying binaries ${variantName} ---"
+        }
+    }
+
+    project.tasks.getByName(assembleTaskName).finalizedBy(project.tasks.getByName(copyTaskName))
+}
