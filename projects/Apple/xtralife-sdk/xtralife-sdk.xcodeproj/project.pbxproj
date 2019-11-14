@@ -1,0 +1,750 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C2D80F2D237D5B1200E645A0 /* CStoreManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2D80F25237D5B1100E645A0 /* CStoreManager.cpp */; };
+		C2D80F2E237D5B1200E645A0 /* CStoreManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2D80F25237D5B1100E645A0 /* CStoreManager.cpp */; };
+		C2D80F2F237D5B1200E645A0 /* CClan.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2D80F26237D5B1200E645A0 /* CClan.cpp */; };
+		C2D80F30237D5B1200E645A0 /* CClan.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2D80F26237D5B1200E645A0 /* CClan.cpp */; };
+		C2D80F31237D5B1200E645A0 /* CFilesystemManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2D80F27237D5B1200E645A0 /* CFilesystemManager.cpp */; };
+		C2D80F32237D5B1200E645A0 /* CFilesystemManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2D80F27237D5B1200E645A0 /* CFilesystemManager.cpp */; };
+		C2D80F33237D5B1200E645A0 /* CUserManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2D80F28237D5B1200E645A0 /* CUserManager.cpp */; };
+		C2D80F34237D5B1200E645A0 /* CUserManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2D80F28237D5B1200E645A0 /* CUserManager.cpp */; };
+		C2D80F35237D5B1200E645A0 /* CTribeManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2D80F29237D5B1200E645A0 /* CTribeManager.cpp */; };
+		C2D80F36237D5B1200E645A0 /* CTribeManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2D80F29237D5B1200E645A0 /* CTribeManager.cpp */; };
+		C2D80F37237D5B1200E645A0 /* CGameManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2D80F2A237D5B1200E645A0 /* CGameManager.cpp */; };
+		C2D80F38237D5B1200E645A0 /* CGameManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2D80F2A237D5B1200E645A0 /* CGameManager.cpp */; };
+		C2D80F39237D5B1200E645A0 /* CIndexManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2D80F2B237D5B1200E645A0 /* CIndexManager.cpp */; };
+		C2D80F3A237D5B1200E645A0 /* CIndexManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2D80F2B237D5B1200E645A0 /* CIndexManager.cpp */; };
+		C2D80F3B237D5B1200E645A0 /* CMatchManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2D80F2C237D5B1200E645A0 /* CMatchManager.cpp */; };
+		C2D80F3C237D5B1200E645A0 /* CMatchManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2D80F2C237D5B1200E645A0 /* CMatchManager.cpp */; };
+		C2D80F4A237D5B3700E645A0 /* ErrorStrings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2D80F3D237D5B3600E645A0 /* ErrorStrings.cpp */; };
+		C2D80F4B237D5B3700E645A0 /* ErrorStrings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2D80F3D237D5B3600E645A0 /* ErrorStrings.cpp */; };
+		C2D80F4C237D5B3700E645A0 /* CClannishRESTproxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2D80F3E237D5B3600E645A0 /* CClannishRESTproxy.cpp */; };
+		C2D80F4D237D5B3700E645A0 /* CClannishRESTproxy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2D80F3E237D5B3600E645A0 /* CClannishRESTproxy.cpp */; };
+		C2D80F4E237D5B3700E645A0 /* CCallback.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2D80F3F237D5B3600E645A0 /* CCallback.cpp */; };
+		C2D80F4F237D5B3700E645A0 /* CCallback.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2D80F3F237D5B3600E645A0 /* CCallback.cpp */; };
+		C2D80F50237D5B3700E645A0 /* CStoreInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = C2D80F40237D5B3600E645A0 /* CStoreInterface.h */; };
+		C2D80F51237D5B3700E645A0 /* CStdioBasedFileImpl.h in Headers */ = {isa = PBXBuildFile; fileRef = C2D80F41237D5B3600E645A0 /* CStdioBasedFileImpl.h */; };
+		C2D80F52237D5B3700E645A0 /* CClannishRESTProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = C2D80F42237D5B3600E645A0 /* CClannishRESTProxy.h */; };
+		C2D80F53237D5B3700E645A0 /* XtraLife_thread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2D80F43237D5B3600E645A0 /* XtraLife_thread.cpp */; };
+		C2D80F54237D5B3700E645A0 /* XtraLife_thread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2D80F43237D5B3600E645A0 /* XtraLife_thread.cpp */; };
+		C2D80F55237D5B3700E645A0 /* XtraLife_private.h in Headers */ = {isa = PBXBuildFile; fileRef = C2D80F44237D5B3600E645A0 /* XtraLife_private.h */; };
+		C2D80F56237D5B3700E645A0 /* CCallback.h in Headers */ = {isa = PBXBuildFile; fileRef = C2D80F45237D5B3600E645A0 /* CCallback.h */; };
+		C2D80F57237D5B3700E645A0 /* RegisterDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = C2D80F46237D5B3600E645A0 /* RegisterDevice.h */; };
+		C2D80F58237D5B3700E645A0 /* CStdioBasedFileImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2D80F47237D5B3600E645A0 /* CStdioBasedFileImpl.cpp */; };
+		C2D80F59237D5B3700E645A0 /* CStdioBasedFileImpl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2D80F47237D5B3600E645A0 /* CStdioBasedFileImpl.cpp */; };
+		C2D80F5A237D5B3700E645A0 /* CHjSON.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2D80F48237D5B3600E645A0 /* CHjSON.cpp */; };
+		C2D80F5B237D5B3700E645A0 /* CHjSON.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2D80F48237D5B3600E645A0 /* CHjSON.cpp */; };
+		C2D80F5C237D5B3700E645A0 /* XtraLife_thread.h in Headers */ = {isa = PBXBuildFile; fileRef = C2D80F49237D5B3600E645A0 /* XtraLife_thread.h */; };
+		C2D80F5F237D5B4900E645A0 /* base64.h in Headers */ = {isa = PBXBuildFile; fileRef = C2D80F5D237D5B4900E645A0 /* base64.h */; };
+		C2D80F60237D5B4900E645A0 /* base64.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2D80F5E237D5B4900E645A0 /* base64.cpp */; };
+		C2D80F61237D5B4900E645A0 /* base64.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2D80F5E237D5B4900E645A0 /* base64.cpp */; };
+		C2D80F64237D5B5700E645A0 /* cJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = C2D80F62237D5B5700E645A0 /* cJSON.h */; };
+		C2D80F65237D5B5700E645A0 /* cJSON.c in Sources */ = {isa = PBXBuildFile; fileRef = C2D80F63237D5B5700E645A0 /* cJSON.c */; };
+		C2D80F66237D5B5700E645A0 /* cJSON.c in Sources */ = {isa = PBXBuildFile; fileRef = C2D80F63237D5B5700E645A0 /* cJSON.c */; };
+		C2D80F76237D5B6D00E645A0 /* CIndexManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C2D80F67237D5B6C00E645A0 /* CIndexManager.h */; };
+		C2D80F77237D5B6D00E645A0 /* CMatchManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C2D80F68237D5B6C00E645A0 /* CMatchManager.h */; };
+		C2D80F78237D5B6D00E645A0 /* XtraLifeHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = C2D80F69237D5B6C00E645A0 /* XtraLifeHelpers.h */; };
+		C2D80F79237D5B6D00E645A0 /* CStoreManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C2D80F6A237D5B6C00E645A0 /* CStoreManager.h */; };
+		C2D80F7A237D5B6D00E645A0 /* CFilesystemManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C2D80F6B237D5B6C00E645A0 /* CFilesystemManager.h */; };
+		C2D80F7B237D5B6D00E645A0 /* CGameManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C2D80F6C237D5B6D00E645A0 /* CGameManager.h */; };
+		C2D80F7C237D5B6D00E645A0 /* CUserManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C2D80F6D237D5B6D00E645A0 /* CUserManager.h */; };
+		C2D80F7E237D5B6D00E645A0 /* CLogLevel.h in Headers */ = {isa = PBXBuildFile; fileRef = C2D80F6F237D5B6D00E645A0 /* CLogLevel.h */; };
+		C2D80F7F237D5B6D00E645A0 /* CHJSON.h in Headers */ = {isa = PBXBuildFile; fileRef = C2D80F70237D5B6D00E645A0 /* CHJSON.h */; };
+		C2D80F80237D5B6D00E645A0 /* XtraLife.h in Headers */ = {isa = PBXBuildFile; fileRef = C2D80F71237D5B6D00E645A0 /* XtraLife.h */; };
+		C2D80F81237D5B6D00E645A0 /* CDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = C2D80F72237D5B6D00E645A0 /* CDelegate.h */; };
+		C2D80F82237D5B6D00E645A0 /* CHttpFailureEventArgs.h in Headers */ = {isa = PBXBuildFile; fileRef = C2D80F73237D5B6D00E645A0 /* CHttpFailureEventArgs.h */; };
+		C2D80F83237D5B6D00E645A0 /* CTribeManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C2D80F74237D5B6D00E645A0 /* CTribeManager.h */; };
+		C2D80F84237D5B6D00E645A0 /* CFastDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = C2D80F75237D5B6D00E645A0 /* CFastDelegate.h */; };
+		C2D80F88237D5B8B00E645A0 /* CMacAndIosFilesystemHandlerImpl.mm in Sources */ = {isa = PBXBuildFile; fileRef = C2D80F85237D5B8A00E645A0 /* CMacAndIosFilesystemHandlerImpl.mm */; };
+		C2D80F89237D5B8B00E645A0 /* CMacAndIosFilesystemHandlerImpl.mm in Sources */ = {isa = PBXBuildFile; fileRef = C2D80F85237D5B8A00E645A0 /* CMacAndIosFilesystemHandlerImpl.mm */; };
+		C2D80F8A237D5B8B00E645A0 /* AppStoreHandler.mm in Sources */ = {isa = PBXBuildFile; fileRef = C2D80F86237D5B8A00E645A0 /* AppStoreHandler.mm */; };
+		C2D80F8B237D5B8B00E645A0 /* AppStoreHandler.mm in Sources */ = {isa = PBXBuildFile; fileRef = C2D80F86237D5B8A00E645A0 /* AppStoreHandler.mm */; };
+		C2D80F8C237D5B8B00E645A0 /* AppStoreHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = C2D80F87237D5B8A00E645A0 /* AppStoreHandler.h */; };
+		C2D80F94237D5B9A00E645A0 /* util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2D80F8D237D5B9A00E645A0 /* util.cpp */; };
+		C2D80F95237D5B9A00E645A0 /* util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2D80F8D237D5B9A00E645A0 /* util.cpp */; };
+		C2D80F96237D5B9A00E645A0 /* helpers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2D80F8E237D5B9A00E645A0 /* helpers.cpp */; };
+		C2D80F97237D5B9A00E645A0 /* helpers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2D80F8E237D5B9A00E645A0 /* helpers.cpp */; };
+		C2D80F98237D5B9A00E645A0 /* curltool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2D80F8F237D5B9A00E645A0 /* curltool.cpp */; };
+		C2D80F99237D5B9A00E645A0 /* curltool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2D80F8F237D5B9A00E645A0 /* curltool.cpp */; };
+		C2D80F9A237D5B9A00E645A0 /* util.h in Headers */ = {isa = PBXBuildFile; fileRef = C2D80F90237D5B9A00E645A0 /* util.h */; };
+		C2D80F9B237D5B9A00E645A0 /* helpers.h in Headers */ = {isa = PBXBuildFile; fileRef = C2D80F91237D5B9A00E645A0 /* helpers.h */; };
+		C2D80F9C237D5B9A00E645A0 /* curltool.h in Headers */ = {isa = PBXBuildFile; fileRef = C2D80F92237D5B9A00E645A0 /* curltool.h */; };
+		C2D80F9D237D5B9A00E645A0 /* XtraLifeHelpers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2D80F93237D5B9A00E645A0 /* XtraLifeHelpers.cpp */; };
+		C2D80F9E237D5B9A00E645A0 /* XtraLifeHelpers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2D80F93237D5B9A00E645A0 /* XtraLifeHelpers.cpp */; };
+		C2D80FA0237D5BB200E645A0 /* DeviceManagement.mm in Sources */ = {isa = PBXBuildFile; fileRef = C2D80F9F237D5BB200E645A0 /* DeviceManagement.mm */; };
+		C2D80FA2237D5BCC00E645A0 /* DeviceManagement.mm in Sources */ = {isa = PBXBuildFile; fileRef = C2D80FA1237D5BCC00E645A0 /* DeviceManagement.mm */; };
+		C2D80FA5237D6E1F00E645A0 /* CClan.h in Headers */ = {isa = PBXBuildFile; fileRef = C2D80F6E237D5B6D00E645A0 /* CClan.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C2D80EFC237D599C00E645A0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C2D80EFE237D599C00E645A0 /* libxtralife.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libxtralife.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2D80F0E237D59D200E645A0 /* libxtralife.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libxtralife.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2D80F25237D5B1100E645A0 /* CStoreManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CStoreManager.cpp; path = ../../../sources/API/CStoreManager.cpp; sourceTree = "<group>"; };
+		C2D80F26237D5B1200E645A0 /* CClan.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CClan.cpp; path = ../../../sources/API/CClan.cpp; sourceTree = "<group>"; };
+		C2D80F27237D5B1200E645A0 /* CFilesystemManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CFilesystemManager.cpp; path = ../../../sources/API/CFilesystemManager.cpp; sourceTree = "<group>"; };
+		C2D80F28237D5B1200E645A0 /* CUserManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CUserManager.cpp; path = ../../../sources/API/CUserManager.cpp; sourceTree = "<group>"; };
+		C2D80F29237D5B1200E645A0 /* CTribeManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CTribeManager.cpp; path = ../../../sources/API/CTribeManager.cpp; sourceTree = "<group>"; };
+		C2D80F2A237D5B1200E645A0 /* CGameManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CGameManager.cpp; path = ../../../sources/API/CGameManager.cpp; sourceTree = "<group>"; };
+		C2D80F2B237D5B1200E645A0 /* CIndexManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CIndexManager.cpp; path = ../../../sources/API/CIndexManager.cpp; sourceTree = "<group>"; };
+		C2D80F2C237D5B1200E645A0 /* CMatchManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CMatchManager.cpp; path = ../../../sources/API/CMatchManager.cpp; sourceTree = "<group>"; };
+		C2D80F3D237D5B3600E645A0 /* ErrorStrings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ErrorStrings.cpp; path = ../../../sources/Core/ErrorStrings.cpp; sourceTree = "<group>"; };
+		C2D80F3E237D5B3600E645A0 /* CClannishRESTproxy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CClannishRESTproxy.cpp; path = ../../../sources/Core/CClannishRESTproxy.cpp; sourceTree = "<group>"; };
+		C2D80F3F237D5B3600E645A0 /* CCallback.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CCallback.cpp; path = ../../../sources/Core/CCallback.cpp; sourceTree = "<group>"; };
+		C2D80F40237D5B3600E645A0 /* CStoreInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CStoreInterface.h; path = ../../../sources/Core/CStoreInterface.h; sourceTree = "<group>"; };
+		C2D80F41237D5B3600E645A0 /* CStdioBasedFileImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CStdioBasedFileImpl.h; path = ../../../sources/Core/CStdioBasedFileImpl.h; sourceTree = "<group>"; };
+		C2D80F42237D5B3600E645A0 /* CClannishRESTProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CClannishRESTProxy.h; path = ../../../sources/Core/CClannishRESTProxy.h; sourceTree = "<group>"; };
+		C2D80F43237D5B3600E645A0 /* XtraLife_thread.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = XtraLife_thread.cpp; path = ../../../sources/Core/XtraLife_thread.cpp; sourceTree = "<group>"; };
+		C2D80F44237D5B3600E645A0 /* XtraLife_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XtraLife_private.h; path = ../../../sources/Core/XtraLife_private.h; sourceTree = "<group>"; };
+		C2D80F45237D5B3600E645A0 /* CCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCallback.h; path = ../../../sources/Core/CCallback.h; sourceTree = "<group>"; };
+		C2D80F46237D5B3600E645A0 /* RegisterDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegisterDevice.h; path = ../../../sources/Core/RegisterDevice.h; sourceTree = "<group>"; };
+		C2D80F47237D5B3600E645A0 /* CStdioBasedFileImpl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CStdioBasedFileImpl.cpp; path = ../../../sources/Core/CStdioBasedFileImpl.cpp; sourceTree = "<group>"; };
+		C2D80F48237D5B3600E645A0 /* CHjSON.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CHjSON.cpp; path = ../../../sources/Core/CHjSON.cpp; sourceTree = "<group>"; };
+		C2D80F49237D5B3600E645A0 /* XtraLife_thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XtraLife_thread.h; path = ../../../sources/Core/XtraLife_thread.h; sourceTree = "<group>"; };
+		C2D80F5D237D5B4900E645A0 /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = base64.h; path = ../../../sources/ExternalModules/Base64/base64.h; sourceTree = "<group>"; };
+		C2D80F5E237D5B4900E645A0 /* base64.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = base64.cpp; path = ../../../sources/ExternalModules/Base64/base64.cpp; sourceTree = "<group>"; };
+		C2D80F62237D5B5700E645A0 /* cJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cJSON.h; path = ../../../sources/ExternalModules/cJSON/cJSON.h; sourceTree = "<group>"; };
+		C2D80F63237D5B5700E645A0 /* cJSON.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cJSON.c; path = ../../../sources/ExternalModules/cJSON/cJSON.c; sourceTree = "<group>"; };
+		C2D80F67237D5B6C00E645A0 /* CIndexManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CIndexManager.h; path = ../../../sources/include/CIndexManager.h; sourceTree = "<group>"; };
+		C2D80F68237D5B6C00E645A0 /* CMatchManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CMatchManager.h; path = ../../../sources/include/CMatchManager.h; sourceTree = "<group>"; };
+		C2D80F69237D5B6C00E645A0 /* XtraLifeHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XtraLifeHelpers.h; path = ../../../sources/include/XtraLifeHelpers.h; sourceTree = "<group>"; };
+		C2D80F6A237D5B6C00E645A0 /* CStoreManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CStoreManager.h; path = ../../../sources/include/CStoreManager.h; sourceTree = "<group>"; };
+		C2D80F6B237D5B6C00E645A0 /* CFilesystemManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CFilesystemManager.h; path = ../../../sources/include/CFilesystemManager.h; sourceTree = "<group>"; };
+		C2D80F6C237D5B6D00E645A0 /* CGameManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGameManager.h; path = ../../../sources/include/CGameManager.h; sourceTree = "<group>"; };
+		C2D80F6D237D5B6D00E645A0 /* CUserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CUserManager.h; path = ../../../sources/include/CUserManager.h; sourceTree = "<group>"; };
+		C2D80F6E237D5B6D00E645A0 /* CClan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CClan.h; path = ../../../sources/include/CClan.h; sourceTree = "<group>"; };
+		C2D80F6F237D5B6D00E645A0 /* CLogLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CLogLevel.h; path = ../../../sources/include/CLogLevel.h; sourceTree = "<group>"; };
+		C2D80F70237D5B6D00E645A0 /* CHJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CHJSON.h; path = ../../../sources/include/CHJSON.h; sourceTree = "<group>"; };
+		C2D80F71237D5B6D00E645A0 /* XtraLife.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XtraLife.h; path = ../../../sources/include/XtraLife.h; sourceTree = "<group>"; };
+		C2D80F72237D5B6D00E645A0 /* CDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDelegate.h; path = ../../../sources/include/CDelegate.h; sourceTree = "<group>"; };
+		C2D80F73237D5B6D00E645A0 /* CHttpFailureEventArgs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CHttpFailureEventArgs.h; path = ../../../sources/include/CHttpFailureEventArgs.h; sourceTree = "<group>"; };
+		C2D80F74237D5B6D00E645A0 /* CTribeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CTribeManager.h; path = ../../../sources/include/CTribeManager.h; sourceTree = "<group>"; };
+		C2D80F75237D5B6D00E645A0 /* CFastDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CFastDelegate.h; path = ../../../sources/include/CFastDelegate.h; sourceTree = "<group>"; };
+		C2D80F85237D5B8A00E645A0 /* CMacAndIosFilesystemHandlerImpl.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = CMacAndIosFilesystemHandlerImpl.mm; path = ../../../sources/PlatformSpecific/Apple/CMacAndIosFilesystemHandlerImpl.mm; sourceTree = "<group>"; };
+		C2D80F86237D5B8A00E645A0 /* AppStoreHandler.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppStoreHandler.mm; path = ../../../sources/PlatformSpecific/Apple/AppStoreHandler.mm; sourceTree = "<group>"; };
+		C2D80F87237D5B8A00E645A0 /* AppStoreHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppStoreHandler.h; path = ../../../sources/PlatformSpecific/Apple/AppStoreHandler.h; sourceTree = "<group>"; };
+		C2D80F8D237D5B9A00E645A0 /* util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = util.cpp; path = ../../../sources/Misc/util.cpp; sourceTree = "<group>"; };
+		C2D80F8E237D5B9A00E645A0 /* helpers.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = helpers.cpp; path = ../../../sources/Misc/helpers.cpp; sourceTree = "<group>"; };
+		C2D80F8F237D5B9A00E645A0 /* curltool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = curltool.cpp; path = ../../../sources/Misc/curltool.cpp; sourceTree = "<group>"; };
+		C2D80F90237D5B9A00E645A0 /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = util.h; path = ../../../sources/Misc/util.h; sourceTree = "<group>"; };
+		C2D80F91237D5B9A00E645A0 /* helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = helpers.h; path = ../../../sources/Misc/helpers.h; sourceTree = "<group>"; };
+		C2D80F92237D5B9A00E645A0 /* curltool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = curltool.h; path = ../../../sources/Misc/curltool.h; sourceTree = "<group>"; };
+		C2D80F93237D5B9A00E645A0 /* XtraLifeHelpers.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = XtraLifeHelpers.cpp; path = ../../../sources/Misc/XtraLifeHelpers.cpp; sourceTree = "<group>"; };
+		C2D80F9F237D5BB200E645A0 /* DeviceManagement.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = DeviceManagement.mm; path = ../../../sources/PlatformSpecific/Apple/iOS/DeviceManagement.mm; sourceTree = "<group>"; };
+		C2D80FA1237D5BCC00E645A0 /* DeviceManagement.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = DeviceManagement.mm; path = ../../../sources/PlatformSpecific/Apple/macOS/DeviceManagement.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C2D80EFB237D599C00E645A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2D80F0C237D59D200E645A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C2D80EF5237D599C00E645A0 = {
+			isa = PBXGroup;
+			children = (
+				C2D80F24237D5AF200E645A0 /* API */,
+				C2D80F23237D5AEF00E645A0 /* Core */,
+				C2D80F20237D5AD500E645A0 /* ExternalModules */,
+				C2D80F1F237D5ACF00E645A0 /* include */,
+				C2D80F1E237D5AC500E645A0 /* Misc */,
+				C2D80F13237D5A4300E645A0 /* PlatformSpecific */,
+				C2D80EFF237D599C00E645A0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C2D80EFF237D599C00E645A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2D80EFE237D599C00E645A0 /* libxtralife.a */,
+				C2D80F0E237D59D200E645A0 /* libxtralife.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2D80F13237D5A4300E645A0 /* PlatformSpecific */ = {
+			isa = PBXGroup;
+			children = (
+				C2D80F14237D5A4E00E645A0 /* Apple */,
+			);
+			name = PlatformSpecific;
+			sourceTree = "<group>";
+		};
+		C2D80F14237D5A4E00E645A0 /* Apple */ = {
+			isa = PBXGroup;
+			children = (
+				C2D80F87237D5B8A00E645A0 /* AppStoreHandler.h */,
+				C2D80F86237D5B8A00E645A0 /* AppStoreHandler.mm */,
+				C2D80F85237D5B8A00E645A0 /* CMacAndIosFilesystemHandlerImpl.mm */,
+				C2D80F16237D5A5B00E645A0 /* iOS */,
+				C2D80F15237D5A5400E645A0 /* macOS */,
+			);
+			name = Apple;
+			sourceTree = "<group>";
+		};
+		C2D80F15237D5A5400E645A0 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				C2D80FA1237D5BCC00E645A0 /* DeviceManagement.mm */,
+			);
+			name = macOS;
+			sourceTree = "<group>";
+		};
+		C2D80F16237D5A5B00E645A0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				C2D80F9F237D5BB200E645A0 /* DeviceManagement.mm */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C2D80F1E237D5AC500E645A0 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				C2D80F8F237D5B9A00E645A0 /* curltool.cpp */,
+				C2D80F92237D5B9A00E645A0 /* curltool.h */,
+				C2D80F8E237D5B9A00E645A0 /* helpers.cpp */,
+				C2D80F91237D5B9A00E645A0 /* helpers.h */,
+				C2D80F8D237D5B9A00E645A0 /* util.cpp */,
+				C2D80F90237D5B9A00E645A0 /* util.h */,
+				C2D80F93237D5B9A00E645A0 /* XtraLifeHelpers.cpp */,
+			);
+			name = Misc;
+			sourceTree = "<group>";
+		};
+		C2D80F1F237D5ACF00E645A0 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				C2D80F6E237D5B6D00E645A0 /* CClan.h */,
+				C2D80F72237D5B6D00E645A0 /* CDelegate.h */,
+				C2D80F75237D5B6D00E645A0 /* CFastDelegate.h */,
+				C2D80F6B237D5B6C00E645A0 /* CFilesystemManager.h */,
+				C2D80F6C237D5B6D00E645A0 /* CGameManager.h */,
+				C2D80F70237D5B6D00E645A0 /* CHJSON.h */,
+				C2D80F73237D5B6D00E645A0 /* CHttpFailureEventArgs.h */,
+				C2D80F67237D5B6C00E645A0 /* CIndexManager.h */,
+				C2D80F6F237D5B6D00E645A0 /* CLogLevel.h */,
+				C2D80F68237D5B6C00E645A0 /* CMatchManager.h */,
+				C2D80F6A237D5B6C00E645A0 /* CStoreManager.h */,
+				C2D80F74237D5B6D00E645A0 /* CTribeManager.h */,
+				C2D80F6D237D5B6D00E645A0 /* CUserManager.h */,
+				C2D80F71237D5B6D00E645A0 /* XtraLife.h */,
+				C2D80F69237D5B6C00E645A0 /* XtraLifeHelpers.h */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		C2D80F20237D5AD500E645A0 /* ExternalModules */ = {
+			isa = PBXGroup;
+			children = (
+				C2D80F22237D5AE700E645A0 /* Base64 */,
+				C2D80F21237D5AE200E645A0 /* cJSON */,
+			);
+			name = ExternalModules;
+			sourceTree = "<group>";
+		};
+		C2D80F21237D5AE200E645A0 /* cJSON */ = {
+			isa = PBXGroup;
+			children = (
+				C2D80F63237D5B5700E645A0 /* cJSON.c */,
+				C2D80F62237D5B5700E645A0 /* cJSON.h */,
+			);
+			name = cJSON;
+			sourceTree = "<group>";
+		};
+		C2D80F22237D5AE700E645A0 /* Base64 */ = {
+			isa = PBXGroup;
+			children = (
+				C2D80F5E237D5B4900E645A0 /* base64.cpp */,
+				C2D80F5D237D5B4900E645A0 /* base64.h */,
+			);
+			name = Base64;
+			sourceTree = "<group>";
+		};
+		C2D80F23237D5AEF00E645A0 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C2D80F3F237D5B3600E645A0 /* CCallback.cpp */,
+				C2D80F45237D5B3600E645A0 /* CCallback.h */,
+				C2D80F3E237D5B3600E645A0 /* CClannishRESTproxy.cpp */,
+				C2D80F42237D5B3600E645A0 /* CClannishRESTProxy.h */,
+				C2D80F48237D5B3600E645A0 /* CHjSON.cpp */,
+				C2D80F47237D5B3600E645A0 /* CStdioBasedFileImpl.cpp */,
+				C2D80F41237D5B3600E645A0 /* CStdioBasedFileImpl.h */,
+				C2D80F40237D5B3600E645A0 /* CStoreInterface.h */,
+				C2D80F3D237D5B3600E645A0 /* ErrorStrings.cpp */,
+				C2D80F46237D5B3600E645A0 /* RegisterDevice.h */,
+				C2D80F44237D5B3600E645A0 /* XtraLife_private.h */,
+				C2D80F43237D5B3600E645A0 /* XtraLife_thread.cpp */,
+				C2D80F49237D5B3600E645A0 /* XtraLife_thread.h */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		C2D80F24237D5AF200E645A0 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				C2D80F26237D5B1200E645A0 /* CClan.cpp */,
+				C2D80F27237D5B1200E645A0 /* CFilesystemManager.cpp */,
+				C2D80F2A237D5B1200E645A0 /* CGameManager.cpp */,
+				C2D80F2B237D5B1200E645A0 /* CIndexManager.cpp */,
+				C2D80F2C237D5B1200E645A0 /* CMatchManager.cpp */,
+				C2D80F25237D5B1100E645A0 /* CStoreManager.cpp */,
+				C2D80F29237D5B1200E645A0 /* CTribeManager.cpp */,
+				C2D80F28237D5B1200E645A0 /* CUserManager.cpp */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C2D80F0A237D59D200E645A0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2D80F9A237D5B9A00E645A0 /* util.h in Headers */,
+				C2D80F9B237D5B9A00E645A0 /* helpers.h in Headers */,
+				C2D80F7E237D5B6D00E645A0 /* CLogLevel.h in Headers */,
+				C2D80F84237D5B6D00E645A0 /* CFastDelegate.h in Headers */,
+				C2D80F9C237D5B9A00E645A0 /* curltool.h in Headers */,
+				C2D80F82237D5B6D00E645A0 /* CHttpFailureEventArgs.h in Headers */,
+				C2D80F77237D5B6D00E645A0 /* CMatchManager.h in Headers */,
+				C2D80F7C237D5B6D00E645A0 /* CUserManager.h in Headers */,
+				C2D80F7F237D5B6D00E645A0 /* CHJSON.h in Headers */,
+				C2D80F7A237D5B6D00E645A0 /* CFilesystemManager.h in Headers */,
+				C2D80F64237D5B5700E645A0 /* cJSON.h in Headers */,
+				C2D80F51237D5B3700E645A0 /* CStdioBasedFileImpl.h in Headers */,
+				C2D80F56237D5B3700E645A0 /* CCallback.h in Headers */,
+				C2D80F76237D5B6D00E645A0 /* CIndexManager.h in Headers */,
+				C2D80F5C237D5B3700E645A0 /* XtraLife_thread.h in Headers */,
+				C2D80F79237D5B6D00E645A0 /* CStoreManager.h in Headers */,
+				C2D80F5F237D5B4900E645A0 /* base64.h in Headers */,
+				C2D80F55237D5B3700E645A0 /* XtraLife_private.h in Headers */,
+				C2D80FA5237D6E1F00E645A0 /* CClan.h in Headers */,
+				C2D80F83237D5B6D00E645A0 /* CTribeManager.h in Headers */,
+				C2D80F57237D5B3700E645A0 /* RegisterDevice.h in Headers */,
+				C2D80F80237D5B6D00E645A0 /* XtraLife.h in Headers */,
+				C2D80F78237D5B6D00E645A0 /* XtraLifeHelpers.h in Headers */,
+				C2D80F81237D5B6D00E645A0 /* CDelegate.h in Headers */,
+				C2D80F7B237D5B6D00E645A0 /* CGameManager.h in Headers */,
+				C2D80F50237D5B3700E645A0 /* CStoreInterface.h in Headers */,
+				C2D80F8C237D5B8B00E645A0 /* AppStoreHandler.h in Headers */,
+				C2D80F52237D5B3700E645A0 /* CClannishRESTProxy.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C2D80EFD237D599C00E645A0 /* xtralife-sdk-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2D80F07237D599C00E645A0 /* Build configuration list for PBXNativeTarget "xtralife-sdk-iOS" */;
+			buildPhases = (
+				C2D80EFA237D599C00E645A0 /* Sources */,
+				C2D80EFB237D599C00E645A0 /* Frameworks */,
+				C2D80EFC237D599C00E645A0 /* CopyFiles */,
+				C220D30A237D78AF00B83526 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "xtralife-sdk-iOS";
+			productName = "xtralife-sdk";
+			productReference = C2D80EFE237D599C00E645A0 /* libxtralife.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C2D80F0D237D59D200E645A0 /* xtralife-sdk-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2D80F0F237D59D200E645A0 /* Build configuration list for PBXNativeTarget "xtralife-sdk-macOS" */;
+			buildPhases = (
+				C2D80F0A237D59D200E645A0 /* Headers */,
+				C2D80F0B237D59D200E645A0 /* Sources */,
+				C2D80F0C237D59D200E645A0 /* Frameworks */,
+				C2D80FA3237D6DA500E645A0 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "xtralife-sdk-macOS";
+			productName = "xtralife-sdk-macOS";
+			productReference = C2D80F0E237D59D200E645A0 /* libxtralife.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C2D80EF6237D599C00E645A0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = XtraLife;
+				TargetAttributes = {
+					C2D80EFD237D599C00E645A0 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					C2D80F0D237D59D200E645A0 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+				};
+			};
+			buildConfigurationList = C2D80EF9237D599C00E645A0 /* Build configuration list for PBXProject "xtralife-sdk" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C2D80EF5237D599C00E645A0;
+			productRefGroup = C2D80EFF237D599C00E645A0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C2D80EFD237D599C00E645A0 /* xtralife-sdk-iOS */,
+				C2D80F0D237D59D200E645A0 /* xtralife-sdk-macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C220D30A237D78AF00B83526 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "repositories_dir=\"$PROJECT_DIR\"/../../../repositories\nxtralife_dir=\"$repositories_dir\"/xtralife\n\nmkdir -p \"$xtralife_dir\"/include\nmkdir -p \"$xtralife_dir\"/libs/iOS/$CONFIGURATION\n\ncp \"$PROJECT_DIR\"/../../../sources/include/*  \"$xtralife_dir\"/include\n\nif [ -f \"$BUILD_DIR\"/$CONFIGURATION-iphoneos/libxtralife.a ] && [ -f \"$BUILD_DIR\"/$CONFIGURATION-iphonesimulator/libxtralife.a ]; then\n    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo -create \\\n    \"$BUILD_DIR\"/$CONFIGURATION-iphoneos/libxtralife.a \\\n    \"$BUILD_DIR\"/$CONFIGURATION-iphonesimulator/libxtralife.a \\\n    -output \"$xtralife_dir\"/libs/iOS/$CONFIGURATION/liballplatforms.a\nelse\n    echo \"Some platforms have not been built yet, not populating repositories binaries\"\nfi\n\nif [ -f \"$xtralife_dir\"/libs/iOS/$CONFIGURATION/liballplatforms.a ] && [ -f \"$repositories_dir\"/openssl/libs/iOS/libssl.a ] && [ -f \"$repositories_dir\"/openssl/libs/iOS/libcrypto.a ] && [ -f \"$repositories_dir\"/curl/libs/iOS/libcurl.a ]; then\n    libtool -static -o \"$xtralife_dir\"/libs/iOS/$CONFIGURATION/libxtralife.a \\\n    \"$xtralife_dir\"/libs/iOS/$CONFIGURATION/liballplatforms.a \\\n    \"$repositories_dir\"/openssl/libs/iOS/*.a \\\n    \"$repositories_dir\"/curl/libs/iOS/*.a\nelse\n    echo \"Missing some repositories files to build fat library\"\nfi\n                                            \nif [ -f \"$xtralife_dir\"/libs/iOS/$CONFIGURATION/liballplatforms.a ]; then\n    rm \"$xtralife_dir\"/libs/iOS/$CONFIGURATION/liballplatforms.a\nfi\n";
+		};
+		C2D80FA3237D6DA500E645A0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "repositories_dir=\"$PROJECT_DIR\"/../../../repositories\nxtralife_dir=\"$repositories_dir\"/xtralife\nsources_dir=\"$PROJECT_DIR\"/../../../sources\n\nmkdir -p \"$xtralife_dir\"/include\nmkdir -p \"$xtralife_dir\"/libs/macOS/\"$CONFIGURATION\"\n\ncp \"$sources_dir\"/include/*  \"$xtralife_dir\"/include\n\nif [ -f \"$CONFIGURATION_BUILD_DIR\"/libxtralife.a ] && [ -f \"$repositories_dir\"/openssl/libs/macOS/libssl.a ] && [ -f \"$repositories_dir\"/openssl/libs/macOS/libcrypto.a ] && [ -f \"$repositories_dir\"/curl/libs/macOS/libcurl.a ]; then\n    libtool -static -o \"$xtralife_dir\"/libs/macOS/\"$CONFIGURATION\"/libxtralife.a \\\n    \"$CONFIGURATION_BUILD_DIR\"/libxtralife.a \\\n    \"$repositories_dir\"/curl/libs/macOS/libcurl.a \\\n    \"$repositories_dir\"/openssl/libs/macOS/*.a\nelse\n    echo \"Missing some repositories files to build fat library\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C2D80EFA237D599C00E645A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2D80FA0237D5BB200E645A0 /* DeviceManagement.mm in Sources */,
+				C2D80F2D237D5B1200E645A0 /* CStoreManager.cpp in Sources */,
+				C2D80F31237D5B1200E645A0 /* CFilesystemManager.cpp in Sources */,
+				C2D80F88237D5B8B00E645A0 /* CMacAndIosFilesystemHandlerImpl.mm in Sources */,
+				C2D80F96237D5B9A00E645A0 /* helpers.cpp in Sources */,
+				C2D80F35237D5B1200E645A0 /* CTribeManager.cpp in Sources */,
+				C2D80F39237D5B1200E645A0 /* CIndexManager.cpp in Sources */,
+				C2D80F33237D5B1200E645A0 /* CUserManager.cpp in Sources */,
+				C2D80F65237D5B5700E645A0 /* cJSON.c in Sources */,
+				C2D80F4E237D5B3700E645A0 /* CCallback.cpp in Sources */,
+				C2D80F5A237D5B3700E645A0 /* CHjSON.cpp in Sources */,
+				C2D80F9D237D5B9A00E645A0 /* XtraLifeHelpers.cpp in Sources */,
+				C2D80F3B237D5B1200E645A0 /* CMatchManager.cpp in Sources */,
+				C2D80F8A237D5B8B00E645A0 /* AppStoreHandler.mm in Sources */,
+				C2D80F60237D5B4900E645A0 /* base64.cpp in Sources */,
+				C2D80F2F237D5B1200E645A0 /* CClan.cpp in Sources */,
+				C2D80F94237D5B9A00E645A0 /* util.cpp in Sources */,
+				C2D80F37237D5B1200E645A0 /* CGameManager.cpp in Sources */,
+				C2D80F98237D5B9A00E645A0 /* curltool.cpp in Sources */,
+				C2D80F4C237D5B3700E645A0 /* CClannishRESTproxy.cpp in Sources */,
+				C2D80F53237D5B3700E645A0 /* XtraLife_thread.cpp in Sources */,
+				C2D80F58237D5B3700E645A0 /* CStdioBasedFileImpl.cpp in Sources */,
+				C2D80F4A237D5B3700E645A0 /* ErrorStrings.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2D80F0B237D59D200E645A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2D80FA2237D5BCC00E645A0 /* DeviceManagement.mm in Sources */,
+				C2D80F2E237D5B1200E645A0 /* CStoreManager.cpp in Sources */,
+				C2D80F32237D5B1200E645A0 /* CFilesystemManager.cpp in Sources */,
+				C2D80F89237D5B8B00E645A0 /* CMacAndIosFilesystemHandlerImpl.mm in Sources */,
+				C2D80F97237D5B9A00E645A0 /* helpers.cpp in Sources */,
+				C2D80F36237D5B1200E645A0 /* CTribeManager.cpp in Sources */,
+				C2D80F3A237D5B1200E645A0 /* CIndexManager.cpp in Sources */,
+				C2D80F34237D5B1200E645A0 /* CUserManager.cpp in Sources */,
+				C2D80F66237D5B5700E645A0 /* cJSON.c in Sources */,
+				C2D80F4F237D5B3700E645A0 /* CCallback.cpp in Sources */,
+				C2D80F5B237D5B3700E645A0 /* CHjSON.cpp in Sources */,
+				C2D80F9E237D5B9A00E645A0 /* XtraLifeHelpers.cpp in Sources */,
+				C2D80F3C237D5B1200E645A0 /* CMatchManager.cpp in Sources */,
+				C2D80F8B237D5B8B00E645A0 /* AppStoreHandler.mm in Sources */,
+				C2D80F61237D5B4900E645A0 /* base64.cpp in Sources */,
+				C2D80F30237D5B1200E645A0 /* CClan.cpp in Sources */,
+				C2D80F95237D5B9A00E645A0 /* util.cpp in Sources */,
+				C2D80F38237D5B1200E645A0 /* CGameManager.cpp in Sources */,
+				C2D80F99237D5B9A00E645A0 /* curltool.cpp in Sources */,
+				C2D80F4D237D5B3700E645A0 /* CClannishRESTproxy.cpp in Sources */,
+				C2D80F54237D5B3700E645A0 /* XtraLife_thread.cpp in Sources */,
+				C2D80F59237D5B3700E645A0 /* CStdioBasedFileImpl.cpp in Sources */,
+				C2D80F4B237D5B3700E645A0 /* ErrorStrings.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C2D80F05237D599C00E645A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../../../sources,
+					../../../repositories/curl/include,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C2D80F06237D599C00E645A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					../../../sources,
+					../../../repositories/curl/include,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C2D80F08237D599C00E645A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9L3K22ZKZZ;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_CFLAGS = "-D__IOS__";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = xtralife;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C2D80F09237D599C00E645A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9L3K22ZKZZ;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_CFLAGS = "-D__IOS__";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = xtralife;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C2D80F10237D59D200E645A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9L3K22ZKZZ;
+				EXECUTABLE_PREFIX = lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = "-D__MACOS__";
+				PRODUCT_NAME = xtralife;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C2D80F11237D59D200E645A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9L3K22ZKZZ;
+				EXECUTABLE_PREFIX = lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_CFLAGS = "-D__MACOS__";
+				PRODUCT_NAME = xtralife;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C2D80EF9237D599C00E645A0 /* Build configuration list for PBXProject "xtralife-sdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2D80F05237D599C00E645A0 /* Debug */,
+				C2D80F06237D599C00E645A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2D80F07237D599C00E645A0 /* Build configuration list for PBXNativeTarget "xtralife-sdk-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2D80F08237D599C00E645A0 /* Debug */,
+				C2D80F09237D599C00E645A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2D80F0F237D59D200E645A0 /* Build configuration list for PBXNativeTarget "xtralife-sdk-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2D80F10237D59D200E645A0 /* Debug */,
+				C2D80F11237D59D200E645A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C2D80EF6237D599C00E645A0 /* Project object */;
+}
