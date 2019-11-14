@@ -1,7 +1,7 @@
 # Repositories folders
 repositories/curl/
 repositories/openssl/
-repositories/xtralife-sdk/
+repositories/xtralife/
 repositories/pthread/
 
 # Mac files
