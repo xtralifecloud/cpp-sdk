@@ -14,4 +14,7 @@ xcuserdata/
 # Gradle files
 !gradle-wrapper.jar
 .gradle
-/build/
+build/
+
+# Android NDK folders
+.cxx/
