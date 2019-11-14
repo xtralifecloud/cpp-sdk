@@ -29,9 +29,7 @@ namespace XtraLife {
         }
 
         CRefClass::~CRefClass() noexcept(false) {
-    #ifndef COTC_DISABLE_EXCEPTIONS
             if ((int) __ref_count > 0) throw "Freeing an object that is still retained elsewhere";
-    #endif
         }
 
     }
