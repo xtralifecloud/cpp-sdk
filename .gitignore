@@ -16,5 +16,9 @@ xcuserdata/
 .gradle
 build/
 
-# Android NDK folders
+# Android Studio files
+*.iml
+.idea/
+
+# Android NDK file
 .cxx/
