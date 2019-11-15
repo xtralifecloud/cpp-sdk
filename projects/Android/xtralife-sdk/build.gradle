@@ -42,7 +42,7 @@ android.libraryVariants.all { variant ->
     def assembleTaskName = "assemble${variantName}"
     task(copyTaskName, type: Copy) {
         variant.outputs.each { output ->
-            from("${project.rootDir}/${project.name}/build/outputs/aar") {
+            from("${project.buildDir}/outputs/aar") {
                 include output.outputFile.name
             }
             rename output.outputFile.name, 'xtralife.aar'
