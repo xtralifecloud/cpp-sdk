@@ -9,15 +9,15 @@
 #ifndef __XtraLife__
 #define __XtraLife__
 
-#if defined(WIN32)
+#if defined(_WINDOWS)
 
-#if defined(XTRALIFE_WIN32_EXPORTS)
+#if defined(XTRALIFE_EXPORTS)
 #define FACTORY_CLS  __declspec(dllexport)
 #else
 #define FACTORY_CLS  __declspec(dllimport)
-#endif  // XTRALIFE_WIN32_EXPORTS
+#endif  // XTRALIFE_EXPORTS
 
-#else	// WIN32
+#else	// _WINDOWS
 
 // all others...
 #ifndef FACTORY_CLS

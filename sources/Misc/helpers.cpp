@@ -1,4 +1,6 @@
-#include "CCallback.h"
+#include <time.h>
+
+#include "Core/CCallback.h"
 #include "Misc/helpers.h"
 
 using namespace XtraLife;
@@ -142,12 +144,4 @@ void safe::replace_string(char *o_string, size_t maxSize, const char *s_string, 
 		// pass recursively to replace other occurrences
 		replace_string(o_string, maxSize, s_string, r_string);
 	}
-}
-
-#include "CClannishRESTProxy.h"
-
-void DownloadDataURL(const char* aURL, CResultHandler* aHandler);
-void DownloadDataURL(const char* aURL, CResultHandler* aHandler)
-{
-    CClannishRESTProxy::Instance()->DownloadData(aURL, MakeBridgeDelegate(aHandler));
 }

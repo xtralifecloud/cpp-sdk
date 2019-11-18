@@ -1,8 +1,8 @@
-#include "CStoreManager.h"
-#include "CCallback.h"
-#include "CStoreInterface.h"
-#include "CClannishRESTProxy.h"
-#include "XtraLife_private.h"
+#include "include/CStoreManager.h"
+#include "Core/CCallback.h"
+#include "Core/CStoreInterface.h"
+#include "Core/CClannishRESTProxy.h"
+#include "Core/XtraLife_private.h"
 #include "Misc/helpers.h"
 
 using namespace XtraLife;

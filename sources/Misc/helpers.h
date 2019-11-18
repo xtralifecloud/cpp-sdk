@@ -10,7 +10,9 @@
 #define XtraLife_helpers_h
 
 #include <iterator>
-#include "XtraLifeHelpers.h"
+#include <stdarg.h>
+
+#include "include/XtraLifeHelpers.h"
 
 namespace XtraLife {
 

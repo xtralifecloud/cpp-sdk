@@ -6,11 +6,11 @@
 //  Copyright (c) 2012 Clan of the Cloud. All rights reserved.
 //
 
-#include "CGameManager.h"
-#include "CClan.h"
-#include "CHJSON.h"
-#include "CCallback.h"
-#include "CClannishRESTProxy.h"
+#include "include/CGameManager.h"
+#include "include/CClan.h"
+#include "include/CHJSON.h"
+#include "Core/CCallback.h"
+#include "Core/CClannishRESTProxy.h"
 #include "Misc/helpers.h"
 
 using namespace XtraLife::Helpers;

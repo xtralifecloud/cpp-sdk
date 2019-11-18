@@ -16,7 +16,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "CFilesystemManager.h"
+#include "include/CFilesystemManager.h"
 
 namespace XtraLife {
 	class CInputFileStdio: public CInputFile {

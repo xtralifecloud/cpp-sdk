@@ -1,6 +1,6 @@
-#include "CFilesystemManager.h"
-#include "CHJSON.h"
-#include "XtraLifeHelpers.h"
+#include "include/CFilesystemManager.h"
+#include "include/CHJSON.h"
+#include "include/XtraLifeHelpers.h"
 #include "Misc/helpers.h"
 
 using namespace XtraLife;

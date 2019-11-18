@@ -6,9 +6,9 @@
 //  Copyright 2011 Clan of the Cloud. All rights reserved.
 //
 
-#include "CHJSON.h"
-#include "cJSON.h"
-#include "XtraLifeHelpers.h"
+#include "include/CHJSON.h"
+#include "ExternalModules/cJSON/cJSON.h"
+#include "include/XtraLifeHelpers.h"
 
 namespace XtraLife {
     namespace Helpers {

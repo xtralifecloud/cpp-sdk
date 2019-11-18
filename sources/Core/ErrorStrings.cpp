@@ -6,7 +6,7 @@
 //  Copyright 2011 Clan of the CLoud. All rights reserved.
 //
 
-#include "XtraLife.h"
+#include "include/XtraLife.h"
 #include "Misc/helpers.h"
 
 namespace XtraLife {

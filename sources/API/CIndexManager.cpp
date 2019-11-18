@@ -6,10 +6,10 @@
 //  Copyright (c) 2015 Clan of the Cloud. All rights reserved.
 //
 
-#include "CIndexManager.h"
-#include "CClan.h"
-#include "CCallback.h"
-#include "CClannishRESTProxy.h"
+#include "include/CIndexManager.h"
+#include "include/CClan.h"
+#include "Core/CCallback.h"
+#include "Core/CClannishRESTProxy.h"
 #include "Misc/helpers.h"
 
 using namespace XtraLife::Helpers;

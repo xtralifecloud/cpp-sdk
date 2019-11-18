@@ -6,27 +6,28 @@
 //  Copyright (c) 2013 Clan of the Cloud. All rights reserved.
 //
 
-#include "CCallback.h"
-#include "CStoreGlue.h"
-#include "GameCenterHandler.h"
-#include "CTribeManager.h"
+#include "Core/CCallback.h"
+#include "Core/CStoreInterface.h"
+#include "include/CTribeManager.h"
+#include "Misc/helpers.h"
 
-using namespace CotCHelpers;
+using namespace XtraLife;
+using namespace XtraLife::Helpers;
 
-namespace CloudBuilder {
+namespace XtraLife {
 
 	static const char *ErrorDesc = "Functionality unavailable on this platform";
 
 	// CStoreGlue
-#ifdef WIN32
-	struct CDummyStoreGlue: CStoreGlue {
-		virtual void GetInformationAboutProducts(const CotCHelpers::CHJSON *productIds, CInternalResultHandler *onFinished) { InvokeHandler(onFinished, enNotImplemented, ErrorDesc); }
-		virtual void LaunchPurchase(const CotCHelpers::CHJSON *productInfo, CInternalResultHandler *onFinished) { InvokeHandler(onFinished, enNotImplemented, ErrorDesc); }
+#ifdef _WINDOWS
+	struct CDummyStoreGlue: CStoreInterface {
+		virtual void GetInformationAboutProducts(const CHJSON *productIds, CInternalResultHandler *onFinished) { InvokeHandler(onFinished, enNotImplemented, ErrorDesc); }
+		virtual void LaunchPurchase(const CHJSON *productInfo, CInternalResultHandler *onFinished) { InvokeHandler(onFinished, enNotImplemented, ErrorDesc); }
 	};
 
 	singleton_holder<CDummyStoreGlue> singleton;
 
-	CStoreGlue *CStoreGlue::Instance() {
+	CStoreInterface* CStoreInterface::Instance() {
 		return singleton.Instance();
 	}
 #endif

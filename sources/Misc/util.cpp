@@ -34,7 +34,7 @@
 
 #include <stdlib.h>
 #include "util.h"
-#include "base64.h"
+#include "ExternalModules/Base64/base64.h"
 #include "helpers.h"
 
 /**

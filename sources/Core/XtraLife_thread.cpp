@@ -9,13 +9,13 @@
 #include <pthread.h>
 
 #include "XtraLife_thread.h"
-#include "XtraLifeHelpers.h"
+#include "include/XtraLifeHelpers.h"
 
 namespace XtraLife {
 namespace Helpers {
 
 // On Windows some defines are missing
-#ifdef WIN32
+#ifdef _WINDOWS
 #include <sys/timeb.h>
 struct timeval {
 	long tv_sec, tv_usec;		// seconds/microseconds

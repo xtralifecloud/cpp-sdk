@@ -8,8 +8,8 @@
 
 #include <stdlib.h>
 
-#include "CCallback.h"
-#include "CHJSON.h"
+#include "Core/CCallback.h"
+#include "include/CHJSON.h"
 
 using namespace XtraLife::Helpers;
 

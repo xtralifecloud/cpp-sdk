@@ -6,18 +6,16 @@
 //  Copyright 2011 Clan of the Cloud. All rights reserved.
 //
 
-#include <unistd.h>
+#include <algorithm>
+#include <chrono>
+#include <thread>
 
-#include "CClannishRESTProxy.h"
-#include "CUserManager.h"
-#include "XtraLife_private.h"
+#include "Core/CClannishRESTProxy.h"
+#include "include/CUserManager.h"
+#include "Core/XtraLife_private.h"
 #include "Misc/helpers.h"
 #include "Misc/util.h"
 #include "Misc/curltool.h"
-
-#if defined(__WINDOWS_32__)
-//#	include <process.h>
-#endif
 
 using namespace XtraLife::Helpers;
 
@@ -1228,7 +1226,7 @@ namespace XtraLife {
 				self->suspendedThreadLock.Wait();
 				// Wait between 0 to 5 sec to avoid all threads to wake up at the same time
 				if (!AmIMainPopThread()) {
-					usleep((rand() % 50) * 100 * 1000);
+					std::this_thread::sleep_for(std::chrono::milliseconds((rand() % 50) * 100));
 				}
 				continue;
 			}

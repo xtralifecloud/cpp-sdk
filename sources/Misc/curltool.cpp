@@ -8,12 +8,12 @@
 
 #include <list>
 
-#include "CHJSON.h"
-#include "CCallback.h"
-#include "CDelegate.h"
-#include "CFastDelegate.h"
-#include "CHttpFailureEventArgs.h"
-#include "XtraLife_private.h"
+#include "include/CHJSON.h"
+#include "include/CDelegate.h"
+#include "include/CFastDelegate.h"
+#include "include/CHttpFailureEventArgs.h"
+#include "Core/XtraLife_private.h"
+#include "Core/CCallback.h"
 #include "Misc/curltool.h"
 
 #include "curl.h"

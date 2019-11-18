@@ -9,19 +9,19 @@
 #ifndef CotClib_CConnectionREST_h
 #define CotClib_CConnectionREST_h
 
-#include "CClan.h"
-#include "CHJSON.h"
-#include "CDelegate.h"
-#include "XtraLifeHelpers.h"
-#include "XtraLife_thread.h"
+#include "include/CClan.h"
+#include "include/CHJSON.h"
+#include "include/CDelegate.h"
+#include "include/XtraLifeHelpers.h"
+#include "Core/XtraLife_thread.h"
 #include "Misc/helpers.h"
 
 #define ADMIN_EVENT_DOMAIN "private"
 
 namespace XtraLife {
 
-    class CEventListener;
-    class CHttpRequest;
+    struct CEventListener;
+    struct CHttpRequest;
 
     typedef enum  etTypeFS {
 		fsApp = 1,

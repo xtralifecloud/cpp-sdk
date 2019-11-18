@@ -8,17 +8,19 @@
 
 #include <stdio.h>
 #include <string.h>
-#include <unistd.h>
+#include <chrono>
+#include <thread>
 
-#include "CClan.h"
-#include "CGameManager.h"
-#include "CTribeManager.h"
-#include "CMatchManager.h"
-#include "CStoreManager.h"
-#include "CCallback.h"
-#include "CFilesystemManager.h"
-#include "CClannishRESTProxy.h"
-#include "XtraLife_private.h"
+
+#include "include/CClan.h"
+#include "include/CGameManager.h"
+#include "include/CTribeManager.h"
+#include "include/CMatchManager.h"
+#include "include/CStoreManager.h"
+#include "include/CFilesystemManager.h"
+#include "Core/CCallback.h"
+#include "Core/CClannishRESTProxy.h"
+#include "Core/XtraLife_private.h"
 #include "Misc/helpers.h"
 #include "Misc/curltool.h"
 
@@ -47,7 +49,7 @@ namespace XtraLife {
 			virtual void Run() {
 				// Wait for a total of 100x100ms (10 sec)
 				for (int i = 0; i < 100 && !shouldStop; i++) {
-					usleep(100 * 1000);
+					std::this_thread::sleep_for(std::chrono::milliseconds(100 * 100);
 				}
 				if (!hasCalledProcessIdleTasksOnce && !shouldStop) {
 					CONSOLE_ERROR("!!!! You have not called CClan::ProcessIdleTasks, thus no async operation can complete !!!!");
@@ -71,7 +73,7 @@ namespace XtraLife {
 		restoreLoginHandler(*(new CGloballyKeptHandler<CResultHandler>))
 	{
 		XtraLife::Helpers::Init();
-        sprintf(g_curlUserAgent, "%s-%s-%s", LIBCOTC_UA, LIBCOTC_OS, LIBCOTC_VERSION);
+        sprintf(g_curlUserAgent, "%s-%s-%s", LIB_XTRALIFE_UA, LIB_XTRALIFE_OS, LIB_XTRALIFE_VERSION);
         
 		// Avoid any activity on the first app resume (wait for a setup)
 		hasCalledHandleUrl = true;

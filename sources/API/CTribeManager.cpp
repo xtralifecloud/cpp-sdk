@@ -6,12 +6,12 @@
 //  Copyright (c) 2012 Clan of the Cloud. All rights reserved.
 //
 
-#include "CTribeManager.h"
-#include "CClan.h"
-#include "CHJSON.h"
-#include "CCallback.h"
-#include "CClannishRESTProxy.h"
-#include "XtraLife_private.h"
+#include "include/CTribeManager.h"
+#include "include/CClan.h"
+#include "include/CHJSON.h"
+#include "Core/CCallback.h"
+#include "Core/CClannishRESTProxy.h"
+#include "Core/XtraLife_private.h"
 #include "Misc/helpers.h"
 
 using namespace XtraLife::Helpers;
@@ -114,7 +114,7 @@ namespace XtraLife {
 		CHJSON config;
 		config.Put("network" , network);
 		config.Put("friends" , aFriends->Duplicate());
-		ListNetworkFriends(aHandler, &config);
+		ListNetworkFriends(&config, aHandler);
 	}
 	
     void CTribeManager::FriendsBestHighScore(int aCount, int aPage, const char *aMode, const char *aDomain, CResultHandler *aHandler)

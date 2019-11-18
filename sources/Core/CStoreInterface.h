@@ -9,7 +9,7 @@
 #ifndef __XtraLife__CStoreInterface__
 #define __XtraLife__CStoreInterface__
 
-#include "CDelegate.h"
+#include "include/CDelegate.h"
 
 namespace XtraLife {
 	

@@ -10,7 +10,8 @@
 #define curltool_h
 
 #include <map>
-#include "CCallback.h"
+
+#include "Core/CCallback.h"
 #include "Misc/helpers.h"
 
 namespace XtraLife {

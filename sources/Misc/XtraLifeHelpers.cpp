@@ -9,7 +9,7 @@
 #include <time.h>
 #include <stdlib.h>
 
-#include "XtraLifeHelpers.h"
+#include "include/XtraLifeHelpers.h"
 
 namespace XtraLife {
     namespace Helpers {

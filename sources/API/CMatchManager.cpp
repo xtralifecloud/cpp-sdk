@@ -1,8 +1,8 @@
-#include "CMatchManager.h"
-#include "CHJSON.h"
-#include "CCallback.h"
-#include "CClannishRESTProxy.h"
-#include "XtraLife_private.h"
+#include "include/CMatchManager.h"
+#include "include/CHJSON.h"
+#include "Core/CCallback.h"
+#include "Core/CClannishRESTProxy.h"
+#include "Core/XtraLife_private.h"
 #include "Misc/helpers.h"
 
 using namespace XtraLife;

@@ -8,7 +8,7 @@
 #ifndef XtraLife_private_h
 #define XtraLife_private_h
 
-#include "CLogLevel.h"
+#include "include/CLogLevel.h"
 
 #ifndef NULL
 	#define NULL 0
@@ -16,24 +16,12 @@
 
 #define SDKVERSION "3.2.0"
 
-#define LIBCOTC_VERSION     SDKVERSION
-#define LIBCOTC_UA          "cloudbuilder"
+#define LIB_XTRALIFE_VERSION     SDKVERSION
+#define LIB_XTRALIFE_UA          "xtralife-sdk"
 
 #define kForbiddenCharForMail "\"'<>,"
 #define kForbiddenChar "\"'<>,-."
 #define kAllowedChar "abcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_"
-
-#if defined(WIN32) || defined(__WP8__)
-
-#define STDCALL __stdcall
-
-#else	// WIN32
-
-#ifndef STDCALL
-#define STDCALL
-#endif
-
-#endif
 
 typedef enum {
 	eNone=0,
@@ -45,15 +33,15 @@ typedef enum {
 } eRelationState;
 
 #ifdef _WINDOWS
-	#define LIBCOTC_OS "Windows"
+	#define LIB_XTRALIFE_OS "Windows"
 #elif defined(__IOS__)
-	#define LIBCOTC_OS "iOS"
+	#define LIB_XTRALIFE_OS "iOS"
 #elif defined(__MACOS__)
-	#define LIBCOTC_OS "macOS"
+	#define LIB_XTRALIFE_OS "macOS"
 #elif defined(__ANDROID__)
-	#define LIBCOTC_OS "Android"
+	#define LIB_XTRALIFE_OS "Android"
 #else
-	#define LIBCOTC_OS "UNKNOWN"
+	#define LIB_XTRALIFE_OS "UNKNOWN"
 #endif
 
 void setuuid(char *dest);

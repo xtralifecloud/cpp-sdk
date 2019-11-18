@@ -9,10 +9,10 @@
 #ifndef XtraLife_CCallback_h
 #define XtraLife_CCallback_h
 
-#include "CDelegate.h"
-#include "CFastDelegate.h"
-#include "XtraLifeHelpers.h"
-#include "XtraLife_thread.h"
+#include "include/CDelegate.h"
+#include "include/CFastDelegate.h"
+#include "include/XtraLifeHelpers.h"
+#include "Core/XtraLife_thread.h"
 
 namespace XtraLife {
 	

@@ -9,19 +9,7 @@
 #ifndef XtraLife_thread_h
 #define XtraLife_thread_h
 
-#include "XtraLifeHelpers.h"
-
-//#if defined(__WINDOWS_32__) || defined(__WP8__)
-//	extern int usleep(long usec);
-	/** WP8-way
-		#include <thread>
-		#include <chrono>
-
-		#define usleep(x)	 {std::chrono::milliseconds dura((x/1000) ? (x/1000) : 1);std::this_thread::sleep_for(dura);}
-	*/
-//#else
-//#	include <unistd.h>
-//#endif
+#include "include/XtraLifeHelpers.h"
 
 namespace XtraLife {
     namespace Helpers {

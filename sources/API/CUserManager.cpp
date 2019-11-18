@@ -6,14 +6,14 @@
 //  Copyright (c) 2012 Clan of the Cloud. All rights reserved.
 //
 
-#include "CUserManager.h"
-#include "CFilesystemManager.h"
-#include "CHJSON.h"
-#include "CCallback.h"
-#include "CStoreInterface.h"
-#include "CClannishRESTProxy.h"
-#include "XtraLife_private.h"
-#include "RegisterDevice.h"
+#include "include/CUserManager.h"
+#include "include/CFilesystemManager.h"
+#include "include/CHJSON.h"
+#include "Core/CCallback.h"
+#include "Core/CStoreInterface.h"
+#include "Core/CClannishRESTProxy.h"
+#include "Core/XtraLife_private.h"
+#include "Core/RegisterDevice.h"
 #include "Misc/helpers.h"
 
 #define LOGIN_PARAMS_PATH "cotcsystem/LoginParams.json"
