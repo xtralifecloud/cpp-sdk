@@ -32,14 +32,7 @@ LOCAL_CXXFLAGS		:= -std=c++11
 
 XTRALIFE_DIR	:= $(LOCAL_PATH)/../../../..
 
-LOCAL_C_INCLUDES 	:=  $(REPOSITORIES_PATH)/curl/include
-LOCAL_C_INCLUDES 	+=  $(XTRALIFE_DIR)/sources			\
-						$(XTRALIFE_DIR)/sources/include			\
-						$(XTRALIFE_DIR)/sources/Core			\
-						$(XTRALIFE_DIR)/sources/Misc			\
-						$(XTRALIFE_DIR)/sources/PlatformSpecific/Android	\
-						$(XTRALIFE_DIR)/sources/ExternalModules/cJSON	\
-						$(XTRALIFE_DIR)/sources/ExternalModules/Base64
+LOCAL_C_INCLUDES 	:=  $(REPOSITORIES_PATH)/curl/include $(XTRALIFE_DIR)/sources
 						
 LOCAL_SRC_FILES		:= 	$(XTRALIFE_DIR)/sources/Core/CCallback.cpp				\
 						$(XTRALIFE_DIR)/sources/Core/CClannishRESTproxy.cpp		\
