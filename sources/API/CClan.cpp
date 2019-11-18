@@ -49,7 +49,7 @@ namespace XtraLife {
 			virtual void Run() {
 				// Wait for a total of 100x100ms (10 sec)
 				for (int i = 0; i < 100 && !shouldStop; i++) {
-					std::this_thread::sleep_for(std::chrono::milliseconds(100 * 100);
+					std::this_thread::sleep_for(std::chrono::milliseconds(100 * 100));
 				}
 				if (!hasCalledProcessIdleTasksOnce && !shouldStop) {
 					CONSOLE_ERROR("!!!! You have not called CClan::ProcessIdleTasks, thus no async operation can complete !!!!");
