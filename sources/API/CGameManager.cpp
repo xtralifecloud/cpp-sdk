@@ -51,11 +51,6 @@ namespace XtraLife {
 		CClannishRESTProxy::Instance()->Score(&json, MakeBridgeDelegate(aHandler));
 	}
 	
-    void CGameManager::Score(CResultHandler *aHandler, long long aHighScore, const char *aMode, const char *aScoreType, const char *aInfoScore, bool aForce, const char *aDomain)
-    {
-        this->Score(aHighScore, aMode, aScoreType, aInfoScore, aForce, aDomain, aHandler);
-    }
-    
     void CGameManager::GetRank(long long aScore, const char *aMode, const char *aDomain, CResultHandler *handler)
 	{
 		if (!CClan::Instance()->isSetup()) { InvokeHandler(handler, enSetupNotCalled); }
@@ -67,16 +62,6 @@ namespace XtraLife {
 		json.Put("domain", aDomain);
 		CClannishRESTProxy::Instance()->GetRank(&json, MakeBridgeDelegate(handler));
 
-	}
-	
-    void CGameManager::GetRank(CResultHandler *aHandler, long long aScore, const char *aMode, const char *aDomain)
-    {
-        this->GetRank(aScore, aMode, aDomain, aHandler);
-    }
-    
-    void CGameManager::CenteredScore(CResultHandler *aHandler, int aCount, const char *aMode, const char *aDomain)
-    {
-        this->CenteredScore(aCount, aMode, aDomain, aHandler);
 	}
 	
     void CGameManager::CenteredScore(int aCount, const char *aMode, const char *aDomain, CResultHandler *aHandler)
@@ -106,36 +91,18 @@ namespace XtraLife {
 		
 	}
 
-    void CGameManager::BestHighScore(CResultHandler *aHandler, int aCount,int aPage, const char *aMode, const char *aDomain)
-    {
-        this->BestHighScore(aCount, aPage, aMode, aDomain, aHandler);
-    }
-
     void CGameManager::UserBestScores(const char *aDomain, CResultHandler *aHandler)
     {
 		if (!CClan::Instance()->isUserLogged()) { InvokeHandler(aHandler, enNotLogged); }
 		CClannishRESTProxy::Instance()->UserBestScore(aDomain, MakeBridgeDelegate(aHandler));
 	}
 
-    void CGameManager::UserBestScores(CResultHandler *aHandler, const char *aDomain)
-    {
-        this->UserBestScores(aDomain, aHandler);
-    }
-    
     void CGameManager::GetValue(const CHJSON *aConfiguration, CResultHandler *aHandler) {
         if (!CClan::Instance()->isSetup()) { InvokeHandler(aHandler, enSetupNotCalled); return; }
         const char *domain = aConfiguration->GetString("domain");
         const char *key = aConfiguration->GetString("key");
         
         CClannishRESTProxy::Instance()->vfsReadGamev3(domain, key, MakeBridgeDelegate(aHandler));
-    }
-    
-    void CGameManager::KeyValueRead(const CHJSON *aConfiguration, CResultHandler *aHandler) {
-        if (!CClan::Instance()->isSetup()) { InvokeHandler(aHandler, enSetupNotCalled); return; }
-        const char *domain = aConfiguration->GetString("domain");
-        const char *key = aConfiguration->GetString("key");
-        
-        CClannishRESTProxy::Instance()->vfsReadGame(domain, key, MakeBridgeDelegate(aHandler));
     }
     
 	/****
@@ -162,13 +129,6 @@ namespace XtraLife {
         const char *domain = aConfiguration->GetString("domain");
         const char *key = aConfiguration->GetString("key");
         CClannishRESTProxy::Instance()->vfsReadGamev3(domain, key, MakeInternalResultHandler(this, &CGameManager::binaryReadDone, aHandler));
-    }
-    
-    void CGameManager::BinaryRead(const CHJSON *aConfiguration, CResultHandler *aHandler) {
-        if (!CClan::Instance()->isSetup()) { InvokeHandler(aHandler, enSetupNotCalled); return; }
-        const char *domain = aConfiguration->GetString("domain");
-        const char *key = aConfiguration->GetString("key");
-        CClannishRESTProxy::Instance()->vfsReadGame(domain, key, MakeInternalResultHandler(this, &CGameManager::binaryReadDone, aHandler));
     }
     
 	void CGameManager::binaryReadDone(const CCloudResult *result, CResultHandler *aHandler) {

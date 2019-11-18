@@ -33,7 +33,7 @@ namespace XtraLife {
             enum state {READY, RUNNING, COMPLETED} mState;
             struct CThreadVars *mVars;
 
-            static void *startupRoutine(void *class_cotcThread);
+            static void *startupRoutine(void * class_xlThread);
             void RunForInternalUse();
 
         protected:

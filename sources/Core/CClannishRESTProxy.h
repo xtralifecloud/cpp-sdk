@@ -6,8 +6,8 @@
 //  Copyright 2011 Clan of the Cloud. All rights reserved.
 //
 
-#ifndef CotClib_CConnectionREST_h
-#define CotClib_CConnectionREST_h
+#ifndef XtraLifelib_CConnectionREST_h
+#define XtraLifelib_CConnectionREST_h
 
 #include "include/CClan.h"
 #include "include/CHJSON.h"

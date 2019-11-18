@@ -71,7 +71,7 @@ namespace XtraLife
 			- "httpTimeout": sets a custom timeout for all requests. Defaults to no limit.
 			- "eventLoopTimeout": sets a custom timeout for the long polling event loop. Should be used with care and set to a
 			  high value (at least 60). Defaults to 590.
-			- "httpVerbose": set to true to output detailed information about the requests performed to CotC servers. Can be used
+			- "httpVerbose": set to true to output detailed information about the requests performed to XtraLife servers. Can be used
 			  for debugging, though it will pollute the logs very much.
 			@param handler result handler whenever the call finishes (it might also be synchronous)
 			@result if noErr, the json passed to the handler may contain:
@@ -102,7 +102,7 @@ namespace XtraLife
 
 		/** Method to handle launch app with url:
 		 used to connect with facebook and google
-		 Also used , in case the url match with "://cotc/", for sponsorship and anonymous login on a new device.
+		 Also used , in case the url match with "://xtralife/", for sponsorship and anonymous login on a new device.
 		 @param aOptions is a json containing field "url" with the url.
 		 On iOS, for GooglePlus, a field "source" must contains sourceApplication as defined in the method:
 		 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation

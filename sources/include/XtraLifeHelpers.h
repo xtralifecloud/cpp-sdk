@@ -13,7 +13,7 @@
  */
 namespace XtraLife {
     namespace Helpers {
-        /** @defgroup cotchelpers Helper classes used to interact with our API.
+        /** @defgroup XtraLifeHelpers Helper classes used to interact with our API.
          * @{
          */
 
@@ -110,7 +110,7 @@ namespace XtraLife {
         };
 
         /** @}
-         * @defgroup cotchelpers_helpers Helper classes for basic tasks in your code, that you may want to use.
+         * @defgroup XtraLifeHelpers Helper classes for basic tasks in your code, that you may want to use.
          * @{ */
 
         /**

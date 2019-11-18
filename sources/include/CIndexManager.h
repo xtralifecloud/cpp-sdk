@@ -70,7 +70,7 @@ namespace XtraLife
 		 - objectid (string): the object ID (as passed when indexing) to fetch.
 		 * @result if noErr, the json passed to the handler may contain the following:
 		 {
-			_index: 'com.clanofthecloud.cloudbuilder.m3nsd85gnqd3',
+			_index: 'cloud.xtralife.test.m3nsd85gnqd3',
 			_type: 'matchIndex',
 			_id: '55706319d11b8125d58c8abe',
 			_version: 1,
@@ -141,7 +141,7 @@ namespace XtraLife
 			{ total: 1,
 			  max_score: 1,
 			  hits:
-			   [ { _index: 'com.clanofthecloud.cloudbuilder.m3nsd85gnqd3',
+			   [ { _index: 'cloud.xtralife.test.m3nsd85gnqd3',
 				   _type: 'matchIndex',
 				   _id: '55706319d11b8125d58c8abe',
 				   _score: 1,

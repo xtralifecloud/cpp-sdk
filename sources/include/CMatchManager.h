@@ -363,18 +363,6 @@ namespace XtraLife {
 		 */
         void DeleteMatch(const Helpers::CHJSON *aConfiguration, CResultHandler *aHandler);
 
-        DEPRECATED void DeleteMatch(CResultHandler *aHandler, const Helpers::CHJSON *aConfiguration);
-        DEPRECATED void FinishMatch(CResultHandler *aHandler, const Helpers::CHJSON *aConfiguration);
-        DEPRECATED void LeaveMatch(CResultHandler *aHandler, const Helpers::CHJSON *aConfiguration);
-        DEPRECATED void DrawFromShoe(CResultHandler *aHandler, const Helpers::CHJSON *aConfiguration);
-        DEPRECATED void PostMove(CResultHandler *aHandler, const Helpers::CHJSON *aConfiguration);
-        DEPRECATED void DismissInvitation(CResultHandler *aHandler, const Helpers::CHJSON *aConfiguration);
-        DEPRECATED void InvitePlayer(CResultHandler *aHandler, const Helpers::CHJSON *aConfiguration);
-        DEPRECATED void JoinMatch(CResultHandler *aHandler, const Helpers::CHJSON *aConfiguration);
-        DEPRECATED void FetchMatch(CResultHandler *aHandler, const Helpers::CHJSON *aConfiguration);
-        DEPRECATED void ListMatches(CResultHandler *aHandler, const Helpers::CHJSON *aConfiguration);
-        DEPRECATED void CreateMatch(CResultHandler *aHandler, const Helpers::CHJSON *aConfiguration);
-
 	private:
 		friend struct singleton_holder<CMatchManager>;
 

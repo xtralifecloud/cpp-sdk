@@ -16,7 +16,7 @@
 #include "Core/RegisterDevice.h"
 #include "Misc/helpers.h"
 
-#define LOGIN_PARAMS_PATH "cotcsystem/LoginParams.json"
+#define LOGIN_PARAMS_PATH "xtralife-system/LoginParams.json"
 
 using namespace XtraLife::Helpers;
 
@@ -264,16 +264,7 @@ namespace XtraLife {
 	}
 
 
-	void CUserManager::Publish(const char *network, const CHJSON* aMessage, CResultHandler *aHandler)
-	{
-		InvokeHandler(aHandler, enExternalCommunityNotSetup, "Unrecognized network");
-	}
-	
 	//////////////////////////// Link ////////////////////////////
-	void CUserManager::Link(const char *aNetwork, CResultHandler *aHandler) {
-		InvokeHandler(aHandler, enNotImplemented , "obsolete method");
-	}
-
     void CUserManager::Link(const CHJSON* aConfiguration, CResultHandler *aHandler) {
         if (!CClan::Instance()->isUserLogged()) { return InvokeHandler(aHandler, enNotLogged); }
         
@@ -297,10 +288,6 @@ namespace XtraLife {
         CClannishRESTProxy::Instance()->LinkWith(&args, MakeBridgeDelegate(aHandler));
     }
 
-    void CUserManager::Link(CResultHandler *aHandler, const CHJSON* aConfiguration) {
-        this->Link(aConfiguration, aHandler);
-    }
-    
 	void CUserManager::Unlink(const char *aNetwork, CResultHandler *aHandler) {
 		if (!CClan::Instance()->isUserLogged()) { InvokeHandler(aHandler, enNotLogged); return; }
 		CHJSON json;
@@ -351,10 +338,6 @@ namespace XtraLife {
 			InvokeHandler(aHandler, enBadParameters, "Unrecognized network");
 	}
 
-    void CUserManager::Convert(CResultHandler *aHandler, const CHJSON *aConfiguration) {
-        this->Convert(aConfiguration, aHandler);
-    }
-    
 	void CUserManager::convertDone(const CCloudResult *res) {
 		convertDoneHandler.Invoke(res);
 	}
@@ -379,19 +362,11 @@ namespace XtraLife {
 		CClannishRESTProxy::Instance()->GetGodfatherCode(aDomain, MakeBridgeDelegate(aHandler));
 	}
 	
-    void CUserManager::GetGodfatherCode(CResultHandler *aHandler, const char *aDomain) {
-        this->GetGodfatherCode(aDomain, aHandler);
-    }
-    
     void CUserManager::GetGodfather(const char *aDomain, CResultHandler *aHandler) {
 		if (!CClan::Instance()->isUserLogged()) { InvokeHandler(aHandler, enNotLogged); return; }
 		CClannishRESTProxy::Instance()->GetGodfather(aDomain, MakeBridgeDelegate(aHandler));
 	}
 
-    void CUserManager::GetGodfather(CResultHandler *aHandler, const char *aDomain) {
-        this->GetGodfather(aDomain, aHandler);
-    }
-    
     void CUserManager::SetGodfather(const char *aCode, const CHJSON *aOptions, CResultHandler *aHandler) {
 		if (!CClan::Instance()->isUserLogged()) { InvokeHandler(aHandler, enNotLogged); return; }
 		CHJSON *j;
@@ -408,9 +383,6 @@ namespace XtraLife {
 		if (!CClan::Instance()->isUserLogged()) { InvokeHandler(aHandler, enNotLogged); return; }
 		CClannishRESTProxy::Instance()->GetGodchildren(aDomain, MakeBridgeDelegate(aHandler));
 	}
-    void CUserManager::GetGodchildren(CResultHandler *aHandler, const char *aDomain) {
-        this->GetGodchildren(aDomain, aHandler);
-    }
     
 	void CUserManager::SetProfile(const CHJSON *aJson, CResultHandler *aHandler) {
 		if (!CClan::Instance()->isSetup()) { InvokeHandler(aHandler, enSetupNotCalled); return; }
@@ -450,10 +422,6 @@ namespace XtraLife {
 		CClannishRESTProxy::Instance()->UserSetProperties(aDomain, aPropertiesList, MakeBridgeDelegate(aHandler));
 	}
 	
-    void CUserManager::SetProperties(CResultHandler *aHandler, const CHJSON* aPropertiesList, const char *aDomain) {
-        this->SetProperties(aPropertiesList, aDomain, aHandler);
-    }
-    
     void CUserManager::GetProperties(const char *aDomain, CResultHandler *aHandler) {
 		if (!CClan::Instance()->isSetup()) { InvokeHandler(aHandler, enSetupNotCalled); return; }
 		if (!CClan::Instance()->isUserLogged()) { InvokeHandler(aHandler, enNotLogged); return; }
@@ -461,10 +429,6 @@ namespace XtraLife {
 		CClannishRESTProxy::Instance()->UserGetProperties(aDomain, MakeBridgeDelegate(aHandler));
    }
 
-    void CUserManager::GetProperties(CResultHandler *aHandler, const char *aDomain) {
-        return GetProperties(aDomain, aHandler);
-    }
-    
 	void CUserManager::SetProperty(const CHJSON* aProperty, const char *aDomain, CResultHandler *aHandler) {
 		if (!CClan::Instance()->isSetup()) { InvokeHandler(aHandler, enSetupNotCalled); return; }
 		if (!CClan::Instance()->isUserLogged()) { InvokeHandler(aHandler, enNotLogged); return; }
@@ -488,10 +452,6 @@ namespace XtraLife {
 		CClannishRESTProxy::Instance()->UserSetProperty(aDomain, aProperty, MakeBridgeDelegate(aHandler));
 	}
 
-    void CUserManager::SetProperty(CResultHandler *aHandler, const CHJSON* aProperty, const char *aDomain) {
-        this->SetProperty(aProperty, aDomain, aHandler);
-    }
-    
     void CUserManager::GetProperty(const char *aField, const char *aDomain, CResultHandler *aHandler) {
 		if (!CClan::Instance()->isSetup()) { InvokeHandler(aHandler, enSetupNotCalled); return; }
 		if (!CClan::Instance()->isUserLogged()) { InvokeHandler(aHandler, enNotLogged); return; }
@@ -499,10 +459,6 @@ namespace XtraLife {
 		
 	}
 
-    void CUserManager::GetProperty(CResultHandler *aHandler, const char *aField, const char *aDomain) {
-        this->GetProperty(aField, aDomain, aHandler);
-    }
-    
     void CUserManager::DeleteProperty(const char *aField, const char *aDomain, CResultHandler *aHandler) {
 		if (!CClan::Instance()->isSetup()) { InvokeHandler(aHandler, enSetupNotCalled); return; }
 		if (!CClan::Instance()->isUserLogged()) { InvokeHandler(aHandler, enNotLogged); return; }
@@ -510,10 +466,6 @@ namespace XtraLife {
 		
 	}
 
-    void CUserManager::DeleteProperty(CResultHandler *aHandler, const char *aField, const char *aDomain) {
-        this->DeleteProperty(aField, aDomain, aHandler);
-    }
-    
 	void CUserManager::Balance(const char *aDomain, CResultHandler *aHandler) {
 		if (!CClan::Instance()->isSetup()) { InvokeHandler(aHandler, enSetupNotCalled); return; }
 		if (!CClan::Instance()->isUserLogged()) { InvokeHandler(aHandler, enNotLogged); return; }
@@ -528,24 +480,6 @@ namespace XtraLife {
 		CClannishRESTProxy::Instance()->TxHistory(aDomain, aJSONCurrency, MakeBridgeDelegate(aHandler));
 	}
 
-
-    void CUserManager::KeyValueRead(const CHJSON *aConfiguration, CResultHandler *aHandler) {
-        if (!CClan::Instance()->isUserLogged()) { InvokeHandler(aHandler, enNotLogged); return; }
-        const char *domain = aConfiguration->GetString("domain");
-        const char *key = aConfiguration->GetString("key");
-        
-        CClannishRESTProxy::Instance()->vfsRead(domain, key, MakeBridgeDelegate(aHandler));
-    }
-    
-    void CUserManager::KeyValueWrite(const CHJSON *aConfiguration, CResultHandler *aHandler) {
-        if (!CClan::Instance()->isUserLogged()) { InvokeHandler(aHandler, enNotLogged); return; }
-        const char *domain = aConfiguration->GetString("domain");
-        const char *key = aConfiguration->GetString("key");
-        const CHJSON *value = aConfiguration->Get("data");
-        if (!value) { InvokeHandler(aHandler, enBadParameters, "Missing data"); return; }
-        
-        CClannishRESTProxy::Instance()->vfsWrite(domain, key, value, false, MakeBridgeDelegate(aHandler));
-    }
     
     void CUserManager::GetValue(const CHJSON *aConfiguration, CResultHandler *aHandler) {
         if (!CClan::Instance()->isUserLogged()) { InvokeHandler(aHandler, enNotLogged); return; }
@@ -571,45 +505,7 @@ namespace XtraLife {
         const char *key = aConfiguration->GetString("key");
         CClannishRESTProxy::Instance()->vfsDelete(domain, key, false, MakeBridgeDelegate(aHandler));
     }
-    
-	void CUserManager::KeyValueDelete(const CHJSON *aConfiguration, CResultHandler *aHandler) {
-        this->DeleteValue(aConfiguration, aHandler);
-	}
-
-	void CUserManager::BinaryRead(const CHJSON *aConfiguration, CResultHandler *aHandler) {
-		if (!CClan::Instance()->isUserLogged()) { InvokeHandler(aHandler, enNotLogged); return; }
-		const char *domain = aConfiguration->GetString("domain");
-		const char *key = aConfiguration->GetString("key");
-		CClannishRESTProxy::Instance()->vfsRead(domain, key, MakeInternalResultHandler(this, &CUserManager::binaryReadDone, aHandler));
-	}
-	
-	void CUserManager::binaryReadDone(const CCloudResult *result, CResultHandler *aHandler) {
-		if (result->GetErrorCode() != enNoErr) { InvokeHandler(aHandler, result); return; }
-		//CONSOLE_VERBOSE("readbin :%s", result->Print());
-		const char *url = result->GetJSON()->GetString("value");
-		if (url == NULL || *url ==0 ) return InvokeHandler(aHandler, enServerError);
-		CClannishRESTProxy::Instance()->DownloadData(url, MakeBridgeDelegate(aHandler));
-	}
-	
-	void CUserManager::BinaryWrite(const CHJSON *aConfiguration, const void* aPointer, size_t aSize, CResultHandler *aHandler)
-	{
-		if (!CClan::Instance()->isUserLogged()) { InvokeHandler(aHandler, enNotLogged); return; }
-		const char *domain = aConfiguration->GetString("domain");
-		const char *key = aConfiguration->GetString("key");
-		CClannishRESTProxy::Instance()->vfsWrite(domain, key, NULL, true, MakeInternalResultHandler(this, &CUserManager::binaryWriteDone, aPointer, aSize, aHandler));
-	}
-
-	/*
-	void CUserManager::binaryWriteDone(const XtraLife::CCloudResult *result, const void* aPointer, size_t aSize, CResultHandler *aHandler) {
-		if (result->GetErrorCode() == enNoErr) {
-			const char *url = result->GetJSON()->GetString("putURL");
-			if (url == NULL || *url ==0 ) return InvokeHandler(aHandler, enServerError);
-			CClannishRESTProxy::Instance()->UploadData(url, aPointer, aSize, MakeBridgeDelegate(aHandler));
-		} else
-			InvokeHandler(aHandler,result);
-	}
-	*/
-	
+    		
 	void CUserManager::binaryWriteDone(const CCloudResult *result, const void* aPointer, size_t aSize, CResultHandler *aHandler) {
 		if (result->GetErrorCode() == enNoErr) {
 			const char *url = result->GetJSON()->GetString("putURL");
@@ -652,10 +548,6 @@ namespace XtraLife {
         const char *url = jsonUrl->valueString();
         if (url == NULL || *url ==0 ) return InvokeHandler(aHandler, enServerError);
         CClannishRESTProxy::Instance()->DownloadData(url, MakeBridgeDelegate(aHandler));
-    }
-    
-    void CUserManager::BinaryDelete(const CHJSON *aConfiguration, CResultHandler *aHandler) {
-        this->DeleteBinary(aConfiguration, aHandler);
     }
     
     void CUserManager::DeleteBinary(const CHJSON *aConfiguration, CResultHandler *aHandler) {
@@ -793,7 +685,4 @@ namespace XtraLife {
 		CClannishRESTProxy::Instance()->BatchUser(aConfiguration, aParameters, MakeBridgeDelegate(aHandler));
 	}
 
-    void CUserManager::Batch(CResultHandler *aHandler, const CHJSON *aConfiguration, const CHJSON *aParameters) {
-        this->Batch(aConfiguration, aParameters, aHandler);
-    }
 }

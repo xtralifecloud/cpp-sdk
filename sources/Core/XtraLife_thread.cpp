@@ -105,8 +105,8 @@ void CThread::RunForInternalUse() {
 	this->Release();
 }
 
-void *CThread::startupRoutine(void *class_cotcThread) {
-	CThread *ptr = (CThread*) class_cotcThread;
+void *CThread::startupRoutine(void *class_xlThread) {
+	CThread *ptr = (CThread*)class_xlThread;
 	ptr->RunForInternalUse();
 	return NULL;
 }

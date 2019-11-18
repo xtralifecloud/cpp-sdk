@@ -133,7 +133,7 @@ namespace XtraLife {
 
 		// Set the app folder
 		const char *appFolder = aConfiguration->GetString("appFolder");
-		if (!appFolder) { appFolder = "CotC/untitledApp"; }
+		if (!appFolder) { appFolder = "XtraLife/untitledApp"; }
 		CFilesystemManager::Instance()->SetFolderHint(appFolder);
 
 		// After the CClannishDBProxy::Setup, call CUserManager::DoSetupProcesses
@@ -185,8 +185,8 @@ namespace XtraLife {
 		hasCalledHandleUrl = true;
 		CONSOLE_VERBOSE("Just received URL\n");
 		const char *url = aOptions->GetString("url");
-		if ( strstr(url, "://cotc/") != 0) {
-			if (strstr(url, "://cotc/token=") != 0) {
+		if ( strstr(url, "://xtralife/") != 0) {
+			if (strstr(url, "://xtralife/token=") != 0) {
 				if (!isUserLogged()) {
 					const char *token = strchr(url, '=') + 1;
 					CHJSON j;

@@ -1,6 +1,5 @@
 //
 //  dummyClass.cpp
-//  CloudBuilder
 //
 //  Created by roland on 17/01/13.
 //  Copyright (c) 2013 Clan of the Cloud. All rights reserved.

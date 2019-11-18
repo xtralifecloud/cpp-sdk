@@ -157,14 +157,6 @@ namespace XtraLife
 		 */
 		void Batch(CResultHandler *aHandler, const Helpers::CHJSON *aConfiguration, const Helpers::CHJSON *aParameters);
 
-        DEPRECATED void Score(CResultHandler *aHandler, long long aHighScore, const char *aMode, const char *aScoreType, const char *aInfoScore, bool aForce, const char *aDomain="private");
-        DEPRECATED void GetRank(CResultHandler *aHandler, long long aHighScore, const char *aMode, const char *aDomain="private");
-        DEPRECATED void BestHighScore(CResultHandler *aHandler, int aCount, int aPage, const char *aMode, const char *aDomain="private");
-        DEPRECATED void CenteredScore(CResultHandler *aHandler, int aCount, const char *aMode, const char *aDomain="private");
-        DEPRECATED void UserBestScores(CResultHandler *aHandler, const char *aDomain="private");
-        DEPRECATED void BinaryRead(const Helpers::CHJSON *aConfiguration, CResultHandler *aHandler);
-        DEPRECATED void KeyValueRead(const Helpers::CHJSON *aConfiguration, CResultHandler *aHandler);
-
     private:
 		/**
 		 * Not publicly instantiable/subclassable. Use Instance().

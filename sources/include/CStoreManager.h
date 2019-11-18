@@ -24,7 +24,7 @@ namespace XtraLife {
 	/**
 		The CStoreManager class allows to easily make in-app purchase on supported
 	 	platforms. You basically unlock features by running on transaction once the
-		CotC servers have successfully verified the financial transaction.
+		XtraLife servers have successfully verified the financial transaction.
 	*/
 	struct FACTORY_CLS CStoreManager {
 		/**
@@ -35,9 +35,9 @@ namespace XtraLife {
 				
 		/**
 		 * Fetches a "catalog" of products available for purchase as configured on the server.
-		 * Note that this call returns the catalog as configured on the CotC server, which may not
+		 * Note that this call returns the catalog as configured on the XtraLife server, which may not
 		 * be exhaustive if additional products are configured on iTunes Connect but not reported
-		 * to the CotC servers.
+		 * to the XtraLife servers.
 		 * @param aHandler result handler whenever the call finishes (it might also be synchronous)
 		 * @param aConfiguration unused
 		 * @result if noErr, the json passed to the handler may contain:

@@ -43,7 +43,7 @@
  */
 namespace XtraLife
 {
-	/** Enum used to specify errors returns by CotC functions and methods.
+	/** Enum used to specify errors returns by XtraLife functions and methods.
 	 * To be kept in sync with EErrorCode.java (Android).
 	 */
 	typedef enum
@@ -65,10 +65,10 @@ namespace XtraLife
 		/// 1004 - Networking problem (unable to reach the server)
 		enNetworkError,
 		
-		/// 1005 - Internal server error. Contact CotC.
+		/// 1005 - Internal server error. Contact XtraLife.
 		enServerError,
 		
-		/// 1006 - Functionality not yet implemented. Contact CotC.
+		/// 1006 - Functionality not yet implemented. Contact XtraLife.
 		enNotImplemented,
 		
 		/// 1007 - The user is already logged in another session.

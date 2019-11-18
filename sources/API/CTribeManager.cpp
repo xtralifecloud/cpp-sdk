@@ -45,11 +45,6 @@ namespace XtraLife {
         CClannishRESTProxy::Instance()->ListUsers(&json, MakeBridgeDelegate(aHandler));
     }
     
-    void CTribeManager::ListUsers(CResultHandler *aHandler, const char *aContainsString, int aLimit, int aSkip)
-    {
-        this->ListUsers(aContainsString, aLimit, aSkip, aHandler);
-    }
-    
     void CTribeManager::ListFriends(const char *aDomain, CResultHandler *aHandler) {
         if (!CClan::Instance()->isUserLogged()) { InvokeHandler(aHandler, enNotLogged); return; }
         CHJSON json;
@@ -57,10 +52,6 @@ namespace XtraLife {
         CClannishRESTProxy::Instance()->ListFriends(&json, MakeBridgeDelegate(aHandler));
     }
     
-	void CTribeManager::ListFriends(CResultHandler *aHandler, const char *aDomain) {
-        this->ListFriends(aDomain, aHandler);
-	}
-			
     void CTribeManager::BlacklistFriends(const char *aDomain, CResultHandler *aHandler) {
         if (!CClan::Instance()->isUserLogged()) { InvokeHandler(aHandler, enNotLogged); return; }
         CHJSON json;
@@ -68,19 +59,11 @@ namespace XtraLife {
         CClannishRESTProxy::Instance()->BlacklistFriends(&json, MakeBridgeDelegate(aHandler));
     }
     
-    void CTribeManager::BlacklistFriends(CResultHandler *aHandler, const char *aDomain) {
-        this->BlacklistFriends(aDomain, aHandler);
-    }
-    
     void CTribeManager::ChangeRelationshipStatus(const CHJSON *aOptions, CResultHandler *aHandler) {
         if (!CClan::Instance()->isUserLogged()) { InvokeHandler(aHandler, enNotLogged); return; }
         if (aOptions == NULL) { InvokeHandler(aHandler, enBadParameters); return; }
         if (IsEqual(aOptions->GetString("id", ""), CClannishRESTProxy::Instance()->GetGamerID())) { InvokeHandler(aHandler, enFriendYourself); return; }
         CClannishRESTProxy::Instance()->ChangeRelationshipStatus(aOptions, MakeBridgeDelegate(aHandler));
-    }
-    
-    void CTribeManager::ChangeRelationshipStatus(CResultHandler *aHandler, const CHJSON *aOptions) {
-        this->ChangeRelationshipStatus(aOptions, aHandler);
     }
     
     void CTribeManager::ListNetworkFriends(const CHJSON* aConfiguration, CResultHandler *aHandler)
@@ -105,18 +88,6 @@ namespace XtraLife {
         }
     }
     
-    void CTribeManager::ListNetworkFriends(CResultHandler *aHandler, const CHJSON* aConfiguration)
-    {
-        this->ListNetworkFriends(aConfiguration, aHandler);
-    }
-    
-	void CTribeManager::ListNetworkFriends(CResultHandler *aHandler, const char *network, const CHJSON* aFriends ) {
-		CHJSON config;
-		config.Put("network" , network);
-		config.Put("friends" , aFriends->Duplicate());
-		ListNetworkFriends(&config, aHandler);
-	}
-	
     void CTribeManager::FriendsBestHighScore(int aCount, int aPage, const char *aMode, const char *aDomain, CResultHandler *aHandler)
     {
         CHJSON json;
@@ -127,17 +98,9 @@ namespace XtraLife {
         CClannishRESTProxy::Instance()->FriendsBestHighScore(&json, MakeBridgeDelegate(aHandler));
     }
     
-    void CTribeManager::FriendsBestHighScore(CResultHandler *aHandler, int aCount, int aPage, const char *aMode, const char *aDomain)
-    {
-        this->FriendsBestHighScore(aCount, aPage, aMode, aDomain, aHandler);
-    }
-    
     void CTribeManager::FindOpponents(const CHJSON *aFilter, const char *aDomain, CResultHandler *aHandler) {
         CClannishRESTProxy::Instance()->FindOpponents(aDomain, aFilter, MakeBridgeDelegate(aHandler));
     }
     
-    void CTribeManager::FindOpponents(CResultHandler *aHandler, const CHJSON *aFilter, const char *aDomain) {
-        this->FindOpponents(aFilter, aDomain, aHandler);
-    }
 }
 

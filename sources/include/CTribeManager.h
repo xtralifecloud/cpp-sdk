@@ -49,7 +49,6 @@ namespace XtraLife
 			} where count is the maximum possible anwsers
 		*/
         void ListUsers(const char *aContainsString,  int aLimit, int aSkip, CResultHandler *aHandler);
-        DEPRECATED void ListUsers(CResultHandler *aHandler, const char *aContainsString,  int aLimit, int aSkip);
 		
 		/**
 			Method used to retrieve the application's friends of the currently logged in profile.
@@ -62,7 +61,6 @@ namespace XtraLife
 			],
 		*/
         void ListFriends(const char *aDomain, CResultHandler *aHandler);
-        DEPRECATED void ListFriends(CResultHandler *aHandler, const char *aDomain = "private");
 
 		/**
 			Method used to retrieve the application's blacklisted gamers of the currently logged in profile.
@@ -75,7 +73,6 @@ namespace XtraLife
 			],
 		*/
         void BlacklistFriends(const char *aDomain, CResultHandler *aHandler);
-        DEPRECATED void BlacklistFriends(CResultHandler *aHandler, const char *aDomain = "private");
 
 		/**
 			Method used to change to a friendship inside the application.
@@ -92,7 +89,6 @@ namespace XtraLife
 			"done" : 1
 		 */
         void ChangeRelationshipStatus(const Helpers::CHJSON *aOptions, CResultHandler *aHandler);
-        DEPRECATED void ChangeRelationshipStatus(CResultHandler *aHandler, const Helpers::CHJSON *aOptions);
 		
 		/**
 			Method used to retrieve the best High Scores for this application.
@@ -112,7 +108,6 @@ namespace XtraLife
 			}
 		*/
         void FriendsBestHighScore(int aCount, int aPage, const char *aMode, const char *aDomain, CResultHandler *aHandler);
-        DEPRECATED void FriendsBestHighScore(CResultHandler *aHandler, int aCount, int aPage, const char *aMode, const char *aDomain = "private");
 		
 		/**
 			Method used to retrieve all the friends in an external network, for the currently logged in profile.
@@ -126,8 +121,6 @@ namespace XtraLife
 			sent if the request was sent.
 		*/
         void ListNetworkFriends(const Helpers::CHJSON* aConfiguration, CResultHandler *aHandler);
-        DEPRECATED void ListNetworkFriends(CResultHandler *aHandler, const Helpers::CHJSON* aConfiguration);
-		DEPRECATED void ListNetworkFriends(CResultHandler *aHandler, const char *aNetwork, const Helpers::CHJSON* aFriends);
 
 		/**
 			Method used to retrieve random opponents for a match.
@@ -139,7 +132,6 @@ namespace XtraLife
             @param aHandler result handler whenever the call finishes (it might also be synchronous)
 		*/
         void FindOpponents(const Helpers::CHJSON *aFilter, const char *aDomain, CResultHandler *aHandler);
-        DEPRECATED void FindOpponents(CResultHandler *aHandler, const Helpers::CHJSON *aFilter, const char *aDomain="private");
 
         CTribeManager();
         ~CTribeManager();
