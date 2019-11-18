@@ -1,10 +1,10 @@
 #include "XtraLifeJNI.h"
-#include "CClan.h"
-#include "XtraLife_private.h"
-#include "CUserManager.h"
-#include "CHJSON.h"
+#include "include/CClan.h"
+#include "include/CUserManager.h"
+#include "include/CHJSON.h"
+#include "Core/CCallback.h"
+#include "Core/XtraLife_private.h"
 #include "JNIUtilities.h"
-#include "CCallback.h"
 
 using namespace XtraLife;
 using namespace XtraLife::Helpers;

@@ -1,5 +1,5 @@
 #include "XtraLifeJNI.h"
-#include "CDelegate.h"
+#include "include/CDelegate.h"
 
 namespace XtraLife {
 	namespace Helpers {

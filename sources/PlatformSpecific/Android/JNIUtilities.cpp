@@ -3,10 +3,10 @@
 
 //#include "CClan.h"
 //#include "JNIUtilities.h"
-#include "CHJSON.h"
-#include "XtraLife.h"
-#include "XtraLifeHelpers.h"
-#include "XtraLife_private.h"
+#include "include/CHJSON.h"
+#include "include/XtraLife.h"
+#include "include/XtraLifeHelpers.h"
+#include "Core/XtraLife_private.h"
 #include "XtraLifeJNI.h"
 
 using namespace XtraLife;
