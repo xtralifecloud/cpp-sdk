@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="API">
+      <UniqueIdentifier>{167e4ed7-cff1-490e-b5a5-2befbaa589f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{f54c74cb-2bb8-4471-8426-7f93b27ab521}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExternalModules">
+      <UniqueIdentifier>{48c19943-e06e-4ce4-9f5f-654ab4207c10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExternalModules\Base64">
+      <UniqueIdentifier>{502e0250-3bf0-487f-a2c1-4f9ea90ef488}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExternalModules\cJSON">
+      <UniqueIdentifier>{464c07d3-9571-4a01-bba7-4045474b2bef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{a45f0b69-48ea-429d-a26d-7f2fa99f58da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Misc">
+      <UniqueIdentifier>{7f9f7aca-5bc1-431b-bffc-36b094bf213a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PlatformSpecific">
+      <UniqueIdentifier>{4a13b6e9-9885-4508-8b03-7e36e1f60e53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PlatformSpecific\Windows">
+      <UniqueIdentifier>{8a98af5b-d346-4e76-b0da-5820088c4379}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\sources\API\CClan.cpp">
+      <Filter>API</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\API\CFilesystemManager.cpp">
+      <Filter>API</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\API\CGameManager.cpp">
+      <Filter>API</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\API\CIndexManager.cpp">
+      <Filter>API</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\API\CMatchManager.cpp">
+      <Filter>API</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\API\CStoreManager.cpp">
+      <Filter>API</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\API\CTribeManager.cpp">
+      <Filter>API</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\API\CUserManager.cpp">
+      <Filter>API</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\Core\CCallback.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\Core\CClannishRESTproxy.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\Core\CHjSON.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\Core\CStdioBasedFileImpl.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\Core\dummyClass.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\Core\ErrorStrings.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\Core\XtraLife_thread.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\ExternalModules\Base64\base64.cpp">
+      <Filter>ExternalModules\Base64</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\ExternalModules\cJSON\cJSON.c">
+      <Filter>ExternalModules\cJSON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\Misc\curltool.cpp">
+      <Filter>Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\Misc\helpers.cpp">
+      <Filter>Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\Misc\util.cpp">
+      <Filter>Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\Misc\XtraLifeHelpers.cpp">
+      <Filter>Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\PlatformSpecific\Windows\CWindowsFilesystemHandlerImpl.cpp">
+      <Filter>PlatformSpecific\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\PlatformSpecific\Windows\RegisterDevice.cpp">
+      <Filter>PlatformSpecific\Windows</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\sources\Core\CCallback.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\Core\CClannishRESTProxy.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\Core\CStdioBasedFileImpl.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\Core\CStoreInterface.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\Core\RegisterDevice.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\Core\XtraLife_private.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\Core\XtraLife_thread.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\ExternalModules\Base64\base64.h">
+      <Filter>ExternalModules\Base64</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\ExternalModules\cJSON\cJSON.h">
+      <Filter>ExternalModules\cJSON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\include\CClan.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\include\CDelegate.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\include\CFastDelegate.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\include\CFilesystemManager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\include\CGameManager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\include\CHJSON.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\include\CHttpFailureEventArgs.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\include\CIndexManager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\include\CLogLevel.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\include\CMatchManager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\include\CStoreManager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\include\CTribeManager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\include\CUserManager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\include\XtraLife.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\Misc\curltool.h">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\Misc\helpers.h">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\Misc\util.h">
+      <Filter>Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\sources\include\XtraLifeHelpers.h">
+      <Filter>Misc</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
