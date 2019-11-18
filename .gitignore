@@ -20,5 +20,10 @@ build/
 *.iml
 .idea/
 
-# Android NDK file
+# Android NDK files
 .cxx/
+
+# Visual Studio files
+.vs/
+x64/
+*.vcxproj.user
