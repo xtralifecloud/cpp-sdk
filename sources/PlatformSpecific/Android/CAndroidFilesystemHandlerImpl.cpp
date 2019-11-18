@@ -1,8 +1,8 @@
 #include <jni.h>
 
-#include "CStdioBasedFileImpl.h"
-#include "helpers.h"
-#include "XtraLife_private.h"
+#include "Core/CStdioBasedFileImpl.h"
+#include "Core/XtraLife_private.h"
+#include "Misc/helpers.h"
 #include "JNIUtilities.h"
 
 using namespace XtraLife;

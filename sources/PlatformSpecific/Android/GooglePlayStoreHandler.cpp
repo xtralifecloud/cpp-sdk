@@ -1,11 +1,11 @@
-#include "XtraLife.h"
-#include "helpers.h"
-#include "CStoreInterface.h"
+#include "include/XtraLife.h"
+#include "Core/CStoreInterface.h"
+#include "Core/CClannishRESTProxy.h"
+#include "Core/XtraLife_private.h"
+#include "Core/CCallback.h"
+#include "Misc/helpers.h"
 #include "GooglePlayStoreHandler.h"
-#include "XtraLife_private.h"
-#include "CCallback.h"
 #include "JNIUtilities.h"
-#include "CClannishRESTProxy.h"
 
 using namespace XtraLife;
 using namespace XtraLife::Helpers;
