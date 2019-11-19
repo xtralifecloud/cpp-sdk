@@ -19,6 +19,9 @@ build/
 # Android Studio files
 *.iml
 .idea/
+.settings/
+.classpath
+.project
 
 # Android NDK files
 .cxx/
