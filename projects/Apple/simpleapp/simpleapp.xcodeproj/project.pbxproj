@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C2658AC723841F21002CF46F /* MyGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2658AC523841F20002CF46F /* MyGame.cpp */; };
+		C2658ACB23841FB2002CF46F /* libxtralife.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2658ACA23841FB1002CF46F /* libxtralife.a */; };
+		C2658ACE23842009002CF46F /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2658ACC23842009002CF46F /* AppKit.framework */; };
+		C2658ACF23842009002CF46F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2658ACD23842009002CF46F /* StoreKit.framework */; };
+		C2658AEF23842576002CF46F /* MyGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2658AC523841F20002CF46F /* MyGame.cpp */; };
+		C2658AF1238425A9002CF46F /* libxtralife.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2658AF0238425A9002CF46F /* libxtralife.a */; };
+		C2658AF3238425C2002CF46F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2658AF2238425C1002CF46F /* StoreKit.framework */; };
+		C2658AF723842FE5002CF46F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2658AF623842FE5002CF46F /* main.cpp */; };
+		C2658B0B2384304E002CF46F /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = C2658AFB23843030002CF46F /* AppDelegate.mm */; };
+		C2658B0C23843063002CF46F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2658AF923843030002CF46F /* main.m */; };
+		C2658B0D23843070002CF46F /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2658B0423843031002CF46F /* SceneDelegate.m */; };
+		C2658B0E23843074002CF46F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2658AFE23843031002CF46F /* ViewController.m */; };
+		C2658B1023843336002CF46F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2658B0023843031002CF46F /* LaunchScreen.storyboard */; };
+		C2658B112384333B002CF46F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2658B0223843031002CF46F /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C2658AB723841DAF002CF46F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C2658AB923841DAF002CF46F /* simpleapp-macOS */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "simpleapp-macOS"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2658AC423841F20002CF46F /* MyGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyGame.h; path = ../../../sources/Samples/simpleapp/MyGame.h; sourceTree = "<group>"; };
+		C2658AC523841F20002CF46F /* MyGame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MyGame.cpp; path = ../../../sources/Samples/simpleapp/MyGame.cpp; sourceTree = "<group>"; };
+		C2658ACA23841FB1002CF46F /* libxtralife.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libxtralife.a; path = ../../../repositories/xtralife/libs/macOS/Debug/libxtralife.a; sourceTree = "<group>"; };
+		C2658ACC23842009002CF46F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		C2658ACD23842009002CF46F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		C2658AD4238420EF002CF46F /* simpleapp-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "simpleapp-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2658AF0238425A9002CF46F /* libxtralife.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libxtralife.a; path = ../../../repositories/xtralife/libs/iOS/Debug/libxtralife.a; sourceTree = "<group>"; };
+		C2658AF2238425C1002CF46F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/StoreKit.framework; sourceTree = DEVELOPER_DIR; };
+		C2658AF623842FE5002CF46F /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = "../../../sources/Samples/simpleapp/PlatformSpecific/Desktop-std-c++/main.cpp"; sourceTree = "<group>"; };
+		C2658AF923843030002CF46F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../../../sources/Samples/simpleapp/PlatformSpecific/iOS/main.m; sourceTree = "<group>"; };
+		C2658AFA23843030002CF46F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../sources/Samples/simpleapp/PlatformSpecific/iOS/Assets.xcassets; sourceTree = "<group>"; };
+		C2658AFB23843030002CF46F /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = ../../../sources/Samples/simpleapp/PlatformSpecific/iOS/AppDelegate.mm; sourceTree = "<group>"; };
+		C2658AFC23843031002CF46F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../../../sources/Samples/simpleapp/PlatformSpecific/iOS/Info.plist; sourceTree = "<group>"; };
+		C2658AFD23843031002CF46F /* SceneDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SceneDelegate.h; path = ../../../sources/Samples/simpleapp/PlatformSpecific/iOS/SceneDelegate.h; sourceTree = "<group>"; };
+		C2658AFE23843031002CF46F /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../../../sources/Samples/simpleapp/PlatformSpecific/iOS/ViewController.m; sourceTree = "<group>"; };
+		C2658B0123843031002CF46F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C2658B0323843031002CF46F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		C2658B0423843031002CF46F /* SceneDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SceneDelegate.m; path = ../../../sources/Samples/simpleapp/PlatformSpecific/iOS/SceneDelegate.m; sourceTree = "<group>"; };
+		C2658B0523843031002CF46F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../../sources/Samples/simpleapp/PlatformSpecific/iOS/AppDelegate.h; sourceTree = "<group>"; };
+		C2658B0623843031002CF46F /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../../../sources/Samples/simpleapp/PlatformSpecific/iOS/ViewController.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C2658AB623841DAF002CF46F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2658ACE23842009002CF46F /* AppKit.framework in Frameworks */,
+				C2658ACF23842009002CF46F /* StoreKit.framework in Frameworks */,
+				C2658ACB23841FB2002CF46F /* libxtralife.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2658AD1238420EF002CF46F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2658AF1238425A9002CF46F /* libxtralife.a in Frameworks */,
+				C2658AF3238425C2002CF46F /* StoreKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C2658AB023841DAF002CF46F = {
+			isa = PBXGroup;
+			children = (
+				C2658AC323841F0D002CF46F /* sources */,
+				C2658ABA23841DAF002CF46F /* Products */,
+				C2658AC923841FB1002CF46F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C2658ABA23841DAF002CF46F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2658AB923841DAF002CF46F /* simpleapp-macOS */,
+				C2658AD4238420EF002CF46F /* simpleapp-iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2658AC323841F0D002CF46F /* sources */ = {
+			isa = PBXGroup;
+			children = (
+				C2658AF423842FBD002CF46F /* PlatformSpecific */,
+				C2658AC523841F20002CF46F /* MyGame.cpp */,
+				C2658AC423841F20002CF46F /* MyGame.h */,
+			);
+			name = sources;
+			sourceTree = "<group>";
+		};
+		C2658AC923841FB1002CF46F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2658AF2238425C1002CF46F /* StoreKit.framework */,
+				C2658AF0238425A9002CF46F /* libxtralife.a */,
+				C2658ACC23842009002CF46F /* AppKit.framework */,
+				C2658ACD23842009002CF46F /* StoreKit.framework */,
+				C2658ACA23841FB1002CF46F /* libxtralife.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C2658AF423842FBD002CF46F /* PlatformSpecific */ = {
+			isa = PBXGroup;
+			children = (
+				C2658AF82384301C002CF46F /* iOS */,
+				C2658AF523842FC8002CF46F /* Desktop-std-c++ */,
+			);
+			name = PlatformSpecific;
+			sourceTree = "<group>";
+		};
+		C2658AF523842FC8002CF46F /* Desktop-std-c++ */ = {
+			isa = PBXGroup;
+			children = (
+				C2658AF623842FE5002CF46F /* main.cpp */,
+			);
+			name = "Desktop-std-c++";
+			sourceTree = "<group>";
+		};
+		C2658AF82384301C002CF46F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				C2658B0523843031002CF46F /* AppDelegate.h */,
+				C2658AFB23843030002CF46F /* AppDelegate.mm */,
+				C2658AFA23843030002CF46F /* Assets.xcassets */,
+				C2658AFF23843031002CF46F /* Base.lproj */,
+				C2658AFC23843031002CF46F /* Info.plist */,
+				C2658AF923843030002CF46F /* main.m */,
+				C2658AFD23843031002CF46F /* SceneDelegate.h */,
+				C2658B0423843031002CF46F /* SceneDelegate.m */,
+				C2658B0623843031002CF46F /* ViewController.h */,
+				C2658AFE23843031002CF46F /* ViewController.m */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C2658AFF23843031002CF46F /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				C2658B0023843031002CF46F /* LaunchScreen.storyboard */,
+				C2658B0223843031002CF46F /* Main.storyboard */,
+			);
+			name = Base.lproj;
+			path = ../../../sources/Samples/simpleapp/PlatformSpecific/iOS/Base.lproj;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C2658AB823841DAF002CF46F /* simpleapp-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2658AC023841DAF002CF46F /* Build configuration list for PBXNativeTarget "simpleapp-macOS" */;
+			buildPhases = (
+				C2658AB523841DAF002CF46F /* Sources */,
+				C2658AB623841DAF002CF46F /* Frameworks */,
+				C2658AB723841DAF002CF46F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "simpleapp-macOS";
+			productName = simpleapp;
+			productReference = C2658AB923841DAF002CF46F /* simpleapp-macOS */;
+			productType = "com.apple.product-type.tool";
+		};
+		C2658AD3238420EF002CF46F /* simpleapp-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2658AEA238420FA002CF46F /* Build configuration list for PBXNativeTarget "simpleapp-iOS" */;
+			buildPhases = (
+				C2658AD0238420EF002CF46F /* Sources */,
+				C2658AD1238420EF002CF46F /* Frameworks */,
+				C2658AD2238420EF002CF46F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "simpleapp-iOS";
+			productName = "simpleapp-iOS";
+			productReference = C2658AD4238420EF002CF46F /* simpleapp-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C2658AB123841DAF002CF46F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = XtraLife;
+				TargetAttributes = {
+					C2658AB823841DAF002CF46F = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					C2658AD3238420EF002CF46F = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = C2658AB423841DAF002CF46F /* Build configuration list for PBXProject "simpleapp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C2658AB023841DAF002CF46F;
+			productRefGroup = C2658ABA23841DAF002CF46F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C2658AB823841DAF002CF46F /* simpleapp-macOS */,
+				C2658AD3238420EF002CF46F /* simpleapp-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C2658AD2238420EF002CF46F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2658B1023843336002CF46F /* LaunchScreen.storyboard in Resources */,
+				C2658B112384333B002CF46F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C2658AB523841DAF002CF46F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2658AF723842FE5002CF46F /* main.cpp in Sources */,
+				C2658AC723841F21002CF46F /* MyGame.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2658AD0238420EF002CF46F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2658B0B2384304E002CF46F /* AppDelegate.mm in Sources */,
+				C2658B0C23843063002CF46F /* main.m in Sources */,
+				C2658AEF23842576002CF46F /* MyGame.cpp in Sources */,
+				C2658B0D23843070002CF46F /* SceneDelegate.m in Sources */,
+				C2658B0E23843074002CF46F /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C2658B0023843031002CF46F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C2658B0123843031002CF46F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C2658B0223843031002CF46F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C2658B0323843031002CF46F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C2658ABE23841DAF002CF46F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ../../../repositories/xtralife/include;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C2658ABF23841DAF002CF46F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ../../../repositories/xtralife/include;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C2658AC123841DAF002CF46F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9L3K22ZKZZ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				LIBRARY_SEARCH_PATHS = ../../../repositories/xtralife/libs/macOS/$CONFIGURATION;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C2658AC223841DAF002CF46F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9L3K22ZKZZ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				LIBRARY_SEARCH_PATHS = ../../../repositories/xtralife/libs/macOS/$CONFIGURATION;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C2658AEB238420FA002CF46F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9L3K22ZKZZ;
+				INFOPLIST_FILE = ../../../sources/Samples/simpleapp/PlatformSpecific/iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = ../../../repositories/xtralife/libs/iOS/$CONFIGURATION;
+				PRODUCT_BUNDLE_IDENTIFIER = "XtraLife.simpleapp-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C2658AEC238420FA002CF46F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9L3K22ZKZZ;
+				INFOPLIST_FILE = ../../../sources/Samples/simpleapp/PlatformSpecific/iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = ../../../repositories/xtralife/libs/iOS/$CONFIGURATION;
+				PRODUCT_BUNDLE_IDENTIFIER = "XtraLife.simpleapp-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C2658AB423841DAF002CF46F /* Build configuration list for PBXProject "simpleapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2658ABE23841DAF002CF46F /* Debug */,
+				C2658ABF23841DAF002CF46F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2658AC023841DAF002CF46F /* Build configuration list for PBXNativeTarget "simpleapp-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2658AC123841DAF002CF46F /* Debug */,
+				C2658AC223841DAF002CF46F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2658AEA238420FA002CF46F /* Build configuration list for PBXNativeTarget "simpleapp-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2658AEB238420FA002CF46F /* Debug */,
+				C2658AEC238420FA002CF46F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C2658AB123841DAF002CF46F /* Project object */;
+}
