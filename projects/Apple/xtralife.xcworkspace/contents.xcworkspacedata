@@ -4,4 +4,7 @@
    <FileRef
       location = "group:xtralife-sdk/xtralife-sdk.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:simpleapp/simpleapp.xcodeproj">
+   </FileRef>
 </Workspace>
