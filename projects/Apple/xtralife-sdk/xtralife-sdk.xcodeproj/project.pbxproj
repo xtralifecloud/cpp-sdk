@@ -96,8 +96,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		C2D80EFE237D599C00E645A0 /* libxtralife.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libxtralife.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		C2D80F0E237D59D200E645A0 /* libxtralife.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libxtralife.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2D80EFE237D599C00E645A0 /* libxtralife-sdk-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libxtralife-sdk-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2D80F0E237D59D200E645A0 /* libxtralife-sdk-macOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libxtralife-sdk-macOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2D80F25237D5B1100E645A0 /* CStoreManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CStoreManager.cpp; path = ../../../sources/API/CStoreManager.cpp; sourceTree = "<group>"; };
 		C2D80F26237D5B1200E645A0 /* CClan.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CClan.cpp; path = ../../../sources/API/CClan.cpp; sourceTree = "<group>"; };
 		C2D80F27237D5B1200E645A0 /* CFilesystemManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CFilesystemManager.cpp; path = ../../../sources/API/CFilesystemManager.cpp; sourceTree = "<group>"; };
@@ -186,8 +186,8 @@
 		C2D80EFF237D599C00E645A0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C2D80EFE237D599C00E645A0 /* libxtralife.a */,
-				C2D80F0E237D59D200E645A0 /* libxtralife.a */,
+				C2D80EFE237D599C00E645A0 /* libxtralife-sdk-iOS.a */,
+				C2D80F0E237D59D200E645A0 /* libxtralife-sdk-macOS.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -382,7 +382,7 @@
 			);
 			name = "xtralife-sdk-iOS";
 			productName = "xtralife-sdk";
-			productReference = C2D80EFE237D599C00E645A0 /* libxtralife.a */;
+			productReference = C2D80EFE237D599C00E645A0 /* libxtralife-sdk-iOS.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		C2D80F0D237D59D200E645A0 /* xtralife-sdk-macOS */ = {
@@ -400,7 +400,7 @@
 			);
 			name = "xtralife-sdk-macOS";
 			productName = "xtralife-sdk-macOS";
-			productReference = C2D80F0E237D59D200E645A0 /* libxtralife.a */;
+			productReference = C2D80F0E237D59D200E645A0 /* libxtralife-sdk-macOS.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -472,7 +472,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "repositories_dir=\"$PROJECT_DIR\"/../../../repositories\nxtralife_dir=\"$repositories_dir\"/xtralife\nsources_dir=\"$PROJECT_DIR\"/../../../sources\n\nmkdir -p \"$xtralife_dir\"/include\nmkdir -p \"$xtralife_dir\"/libs/macOS/\"$CONFIGURATION\"\n\ncp \"$sources_dir\"/include/*  \"$xtralife_dir\"/include\n\nif [ -f \"$CONFIGURATION_BUILD_DIR\"/libxtralife.a ] && [ -f \"$repositories_dir\"/openssl/libs/macOS/libssl.a ] && [ -f \"$repositories_dir\"/openssl/libs/macOS/libcrypto.a ] && [ -f \"$repositories_dir\"/curl/libs/macOS/libcurl.a ]; then\n    libtool -static -o \"$xtralife_dir\"/libs/macOS/\"$CONFIGURATION\"/libxtralife.a \\\n    \"$CONFIGURATION_BUILD_DIR\"/libxtralife.a \\\n    \"$repositories_dir\"/curl/libs/macOS/libcurl.a \\\n    \"$repositories_dir\"/openssl/libs/macOS/*.a\nelse\n    echo \"Missing some repositories files to build fat library\"\nfi\n";
+			shellScript = "repositories_dir=\"$PROJECT_DIR\"/../../../repositories\nxtralife_dir=\"$repositories_dir\"/xtralife\nsources_dir=\"$PROJECT_DIR\"/../../../sources\n\nmkdir -p \"$xtralife_dir\"/include\nmkdir -p \"$xtralife_dir\"/libs/macOS/\"$CONFIGURATION\"\n\ncp \"$sources_dir\"/include/*  \"$xtralife_dir\"/include\n\nif [ -f \"$CONFIGURATION_BUILD_DIR\"/lib\"$TARGET_NAME\".a ] && [ -f \"$repositories_dir\"/openssl/libs/macOS/libssl.a ] && [ -f \"$repositories_dir\"/openssl/libs/macOS/libcrypto.a ] && [ -f \"$repositories_dir\"/curl/libs/macOS/libcurl.a ]; then\n    libtool -static -o \"$xtralife_dir\"/libs/macOS/\"$CONFIGURATION\"/libxtralife.a \\\n    \"$CONFIGURATION_BUILD_DIR\"/lib\"$TARGET_NAME\".a \\\n    \"$repositories_dir\"/curl/libs/macOS/libcurl.a \\\n    \"$repositories_dir\"/openssl/libs/macOS/*.a\nelse\n    echo \"Missing some repositories files to build fat library\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -666,7 +666,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_CFLAGS = "-D__IOS__";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = xtralife;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -680,7 +680,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_CFLAGS = "-D__IOS__";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = xtralife;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -694,7 +694,7 @@
 				EXECUTABLE_PREFIX = lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CFLAGS = "-D__MACOS__";
-				PRODUCT_NAME = xtralife;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
@@ -708,7 +708,7 @@
 				EXECUTABLE_PREFIX = lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CFLAGS = "-D__MACOS__";
-				PRODUCT_NAME = xtralife;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
