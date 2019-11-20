@@ -25,6 +25,7 @@ build/
 
 # Android NDK files
 .cxx/
+**/temp/libs/
 
 # Visual Studio files
 .vs/
