@@ -1,0 +1,90 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+
+
+    defaultConfig {
+        applicationId "cloud.xtralife.simpleapp"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    externalNativeBuild {
+        ndkBuild {
+            path 'jni/Android.mk'
+        }
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile '../../../sources/Samples/simpleapp/PlatformSpecific/Android/AndroidManifest.xml'
+
+            java.srcDirs = ['../../../sources/Samples/simpleapp/PlatformSpecific/Android/java']
+            res.srcDirs = ['../../../sources/Samples/simpleapp/PlatformSpecific/Android/res']
+        }
+
+        test {
+            java.srcDirs = ['../../../sources/Samples/simpleapp/PlatformSpecific/Android/java']
+            res.srcDirs = ['../../../sources/Samples/simpleapp/PlatformSpecific/Android/res']
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            externalNativeBuild {
+                ndkBuild {
+                    arguments "BUILD_TYPE=release"
+                }
+            }
+        }
+        debug {
+            externalNativeBuild {
+                ndkBuild {
+                    arguments "BUILD_TYPE=debug"
+                }
+            }
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(":xtralife-sdk")
+
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+}
+
+android.applicationVariants.all { variant ->
+    def variantName = variant.name.capitalize()
+    def extractTaskName = "extract${variantName}Binaries"
+    def generateJsonModelTaskName = "generateJsonModel${variantName}"
+    task(extractTaskName, type: Copy, group: "build") {
+        from zipTree("${project.rootDir}/../../repositories/xtralife/libs/Android/${variantName}/xtralife.aar")
+        include "jni/**/*.so"
+        into "${project.rootDir}/${project.name}/temp/libs/${variantName}/"
+        eachFile {
+            def segments = it.getRelativePath().getSegments() as List
+            it.setPath(segments.tail().join("/"))
+            return it
+        }
+        includeEmptyDirs = false
+
+        doLast {
+            println "--- Copying binaries in libs for ndk-build link ---"
+        }
+    }
+    project.tasks.getByName(extractTaskName).dependsOn(project.tasks.getByName("useRepository"))
+    project.tasks.getByName(generateJsonModelTaskName).dependsOn(project.tasks.getByName(extractTaskName))
+}
