@@ -6,6 +6,8 @@
 #include "Core/XtraLife_private.h"
 #include "JNIUtilities.h"
 
+#define LOG_TAG "XtraLife C++"
+
 using namespace XtraLife;
 using namespace XtraLife::Helpers;
 
@@ -14,7 +16,7 @@ JavaVM *sJavaVM = NULL;
 jint JNI_OnLoad(JavaVM* vm, void* reserved)
 {
 	sJavaVM	= vm;
-	__android_log_print(ANDROID_LOG_VERBOSE, "Clan C++", "Launching Clan C++ v%s", SDKVERSION);
+	__android_log_print(ANDROID_LOG_VERBOSE, LOG_TAG, "Launching XtraLife C++ v%s", SDKVERSION);
 	
 	return JNI_VERSION_1_6;
 }
@@ -22,7 +24,7 @@ jint JNI_OnLoad(JavaVM* vm, void* reserved)
 JNIEnv *JNIGetEnv() {
 	JNIEnv *env = NULL;
 	if (sJavaVM->GetEnv(reinterpret_cast<void**>(&env), JNI_VERSION_1_6) != JNI_OK) {
-		__android_log_print(ANDROID_LOG_ERROR, "Clan C++", "Couldn't even retrieve JNIEnv");
+		__android_log_print(ANDROID_LOG_ERROR, LOG_TAG, "Couldn't even retrieve JNIEnv");
 	}
 
 	return env;
@@ -55,13 +57,13 @@ void RegisterDevice(void)
     jmethodID	queryRegisterDevice;
     jthrowable	exc;
     
-    __android_log_print(ANDROID_LOG_VERBOSE, "Clan C++", "Calling Java QueryRegisterDevice");
+    __android_log_print(ANDROID_LOG_VERBOSE, LOG_TAG, "Calling Java QueryRegisterDevice");
     
-    __android_log_print(ANDROID_LOG_VERBOSE, "Clan C++", "Using JavaVM: %p", sJavaVM);
+    __android_log_print(ANDROID_LOG_VERBOSE, LOG_TAG, "Using JavaVM: %p", sJavaVM);
     
     if (sJavaVM->GetEnv(reinterpret_cast<void**>(&currentJNIEnv), JNI_VERSION_1_6) != JNI_OK)
     {
-        __android_log_print(ANDROID_LOG_ERROR, "Clan C++", "Couldn't even retrieve JNIEnv");
+        __android_log_print(ANDROID_LOG_ERROR, LOG_TAG, "Couldn't even retrieve JNIEnv");
         return;
     }
     
@@ -69,17 +71,17 @@ void RegisterDevice(void)
     exc = currentJNIEnv->ExceptionOccurred();
     if(exc)
     {
-        __android_log_print(ANDROID_LOG_VERBOSE, "Clan C++", "No notification module available");
+        __android_log_print(ANDROID_LOG_VERBOSE, LOG_TAG, "No notification module available");
         currentJNIEnv->ExceptionClear();
         
         return;
     }
     
-    __android_log_print(ANDROID_LOG_VERBOSE, "Clan C++", "clanClass is:%p", clanClass);
+    __android_log_print(ANDROID_LOG_VERBOSE, LOG_TAG, "clanClass is:%p", clanClass);
     if(clanClass)
     {
         queryRegisterDevice	= currentJNIEnv->GetStaticMethodID(clanClass, "QueryRegisterDevice", "()V");
-        __android_log_print(ANDROID_LOG_VERBOSE, "Clan C++", "QueryRegisterDevice is:%p", queryRegisterDevice);
+        __android_log_print(ANDROID_LOG_VERBOSE, LOG_TAG, "QueryRegisterDevice is:%p", queryRegisterDevice);
         
         currentJNIEnv->CallStaticVoidMethod(clanClass, queryRegisterDevice);
     }
@@ -92,11 +94,11 @@ void UnregisterDevice(void)
     jmethodID	unregisterDevice;
     jthrowable	exc;
     
-    __android_log_print(ANDROID_LOG_VERBOSE, "Clan C++", "Calling Java UnregisterDevice");
+    __android_log_print(ANDROID_LOG_VERBOSE, LOG_TAG, "Calling Java UnregisterDevice");
     
     if (sJavaVM->GetEnv(reinterpret_cast<void**>(&currentJNIEnv), JNI_VERSION_1_6) != JNI_OK)
     {
-        __android_log_print(ANDROID_LOG_ERROR, "Clan C++", "Couldn't even retrieve JNIEnv");
+        __android_log_print(ANDROID_LOG_ERROR, LOG_TAG, "Couldn't even retrieve JNIEnv");
         return;
     }
     
@@ -104,17 +106,17 @@ void UnregisterDevice(void)
     exc = currentJNIEnv->ExceptionOccurred();
     if(exc)
     {
-        __android_log_print(ANDROID_LOG_VERBOSE, "Clan C++", "No notification module available");
+        __android_log_print(ANDROID_LOG_VERBOSE, LOG_TAG, "No notification module available");
         currentJNIEnv->ExceptionClear();
         
         return;
     }
     
-    __android_log_print(ANDROID_LOG_VERBOSE, "Clan C++", "clanClass is:%p", clanClass);
+    __android_log_print(ANDROID_LOG_VERBOSE, LOG_TAG, "clanClass is:%p", clanClass);
     if(clanClass)
     {
         unregisterDevice	= currentJNIEnv->GetStaticMethodID(clanClass, "UnregisterDevice", "()V");
-        __android_log_print(ANDROID_LOG_VERBOSE, "Clan C++", "UnregisterDevice is:%p", unregisterDevice);
+        __android_log_print(ANDROID_LOG_VERBOSE, LOG_TAG, "UnregisterDevice is:%p", unregisterDevice);
         
         currentJNIEnv->CallStaticVoidMethod(clanClass, unregisterDevice);
     }
@@ -125,7 +127,7 @@ extern "C" JNIEXPORT jint JNICALL Java_cloud_xtralife_sdk_Clan_RegisterDevice(JN
 	JavaString	token(aEnv, aToken);
 
 	AchieveRegisterDevice(strlen(token), token.c_str());
-	__android_log_print(ANDROID_LOG_VERBOSE, "Clan C++", "Registered device:android with token:%s", token.c_str());
+	__android_log_print(ANDROID_LOG_VERBOSE, LOG_TAG, "Registered device:android with token:%s", token.c_str());
 
 	return enNoErr;
 }
@@ -136,7 +138,7 @@ extern "C" JNIEXPORT jint JNICALL Java_cloud_xtralife_sdk_Clan_HandleRemoteNotif
 
 extern "C" JNIEXPORT jint JNICALL Java_cloud_xtralife_sdk_Clan_Suspended(JNIEnv* aEnv, jclass aClass)
 {
-	__android_log_print(ANDROID_LOG_VERBOSE, "Clan C++", "Suspended");
+	__android_log_print(ANDROID_LOG_VERBOSE, LOG_TAG, "Suspended");
 
 	if (CClan::Instance())
 		CClan::Instance()->Suspend();
@@ -146,7 +148,7 @@ extern "C" JNIEXPORT jint JNICALL Java_cloud_xtralife_sdk_Clan_Suspended(JNIEnv*
 
 extern "C" JNIEXPORT jint JNICALL Java_cloud_xtralife_sdk_Clan_Resumed(JNIEnv* aEnv, jclass aClass)
 {
-	__android_log_print(ANDROID_LOG_VERBOSE, "Clan C++", "Resumed");
+	__android_log_print(ANDROID_LOG_VERBOSE, LOG_TAG, "Resumed");
 	
 	if (CClan::Instance())
 		CClan::Instance()->Resume();
@@ -162,21 +164,21 @@ namespace XtraLife {
             jclass		clanClass;
             jmethodID	collect;
             
-            __android_log_print(ANDROID_LOG_VERBOSE, "Clan C++", "Calling Java CollectDeviceInformation");
+            __android_log_print(ANDROID_LOG_VERBOSE, LOG_TAG, "Calling Java CollectDeviceInformation");
             
             if (sJavaVM->GetEnv(reinterpret_cast<void**>(&currentJNIEnv), JNI_VERSION_1_6) != JNI_OK)
             {
-                __android_log_print(ANDROID_LOG_ERROR, "Clan C++", "Couldn't even retrieve JNIEnv");
+                __android_log_print(ANDROID_LOG_ERROR, LOG_TAG, "Couldn't even retrieve JNIEnv");
             }
             
             clanClass	= currentJNIEnv->FindClass("cloud/xtralife/sdk/Clan");
-            __android_log_print(ANDROID_LOG_VERBOSE, "Clan C++", "clanClass is:%p", clanClass);
+            __android_log_print(ANDROID_LOG_VERBOSE, LOG_TAG, "clanClass is:%p", clanClass);
             collect = currentJNIEnv->GetStaticMethodID(clanClass, "CollectDeviceInformation", "()Ljava/lang/String;");
-            __android_log_print(ANDROID_LOG_VERBOSE, "Clan C++", "CollectDeviceInformation is:%p", collect);
+            __android_log_print(ANDROID_LOG_VERBOSE, LOG_TAG, "CollectDeviceInformation is:%p", collect);
             jstring info = (jstring) currentJNIEnv->CallStaticObjectMethod(clanClass, collect);
 
             CHJSON *j = CHJSON::parse(JavaString(currentJNIEnv, info));
-            __android_log_print(ANDROID_LOG_VERBOSE, "Clan C++", "CollectDeviceInformation: %s", j->printFormatted().c_str());
+            __android_log_print(ANDROID_LOG_VERBOSE, LOG_TAG, "CollectDeviceInformation: %s", j->printFormatted().c_str());
 
             return j;
         }

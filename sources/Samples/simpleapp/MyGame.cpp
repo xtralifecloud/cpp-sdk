@@ -10,6 +10,9 @@
 
 #include <string>
 #include <iostream>
+#ifdef __ANDROID__
+#include <android/log.h>
+#endif
 
 #include "CHJSON.h"
 #include "CClan.h"
@@ -20,10 +23,8 @@ void MyGame::Startup()
     mRunning = true;
     
     XtraLife::Helpers::CHJSON json;
-    //json.Put("key", "xxxxxxxxx");       // To get your own application id and secret
-    //json.Put("secret", "yyyyyyyyy");    // create an account at https://account.clanofthecloud.com
-    json.Put("key", "cloudbuilder-key");       // To get your own application id and secret
-    json.Put("secret", "azerty");    // create an account at https://account.clanofthecloud.com
+    json.Put("key", "xxxxxxxxx");       // To get your own application id and secret
+    json.Put("secret", "yyyyyyyyy");    // create an account at https://account.clanofthecloud.com
     json.Put("env", "sandbox");         // "sandbox" to develop and test, "production" to go live
     XtraLife::CClan::Instance()->Setup(&json, XtraLife::MakeResultHandler(this, &MyGame::SetupDone));
 }
@@ -72,6 +73,10 @@ template<typename... Args> void MyGame::Log(const char* fmt, Args... args)
     buf.reserve(size + 1);
     buf.resize(size);
     snprintf(&buf[0], size + 1, fmt, args...);
-    
+
+#ifdef __ANDROID__
+	__android_log_print(ANDROID_LOG_VERBOSE, "simpleapp", buf.c_str());
+#else
     std::cout << buf << std::endl;
+#endif
 }

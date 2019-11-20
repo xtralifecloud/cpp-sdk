@@ -19,3 +19,35 @@ allprojects {
 wrapper {
     gradleVersion = '5.4.1'
 }
+
+// Gradle wrapper tasks
+// Didn't find a better way to mix tasks dependencies between two different modules
+
+class repositoryReadyTask extends DefaultTask {
+    @TaskAction
+    def ready() {
+        println '--- Repository ready ---'
+    }
+}
+class useRepositoryTask extends DefaultTask {
+    @TaskAction
+    def ready() {
+        println '--- Ready to use repository ---'
+    }
+}
+
+project (":xtralife-sdk") {
+    task repositoryReady(type: repositoryReadyTask)
+    task installHeadersToRepository(type: Copy) {
+        from "${project.rootDir}/../../sources/include"
+        into "${project.rootDir}/../../repositories/xtralife/include"
+
+        doLast {
+            println "--- Copying include folder ---"
+        }
+    }
+}
+project (":simpleapp") {
+    task useRepository(type: useRepositoryTask)
+}
+project("simpleapp").tasks.getByName("useRepository").dependsOn(project("xtralife-sdk").tasks.getByName("repositoryReady"))

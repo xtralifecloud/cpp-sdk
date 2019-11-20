@@ -14,10 +14,10 @@
 	#define NULL 0
 #endif
 
-#define SDKVERSION "3.2.0"
+#define SDKVERSION "1.0.0.1"
 
 #define LIB_XTRALIFE_VERSION     SDKVERSION
-#define LIB_XTRALIFE_UA          "xtralife-sdk"
+#define LIB_XTRALIFE_UA          "xtralife"
 
 #define kForbiddenCharForMail "\"'<>,"
 #define kForbiddenChar "\"'<>,-."

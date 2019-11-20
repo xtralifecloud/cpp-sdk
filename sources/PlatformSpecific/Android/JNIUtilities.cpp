@@ -61,7 +61,7 @@ CHJSON *BuildJsonFromHashMap(JNIEnv* env, jobject jHashMap) {
 void JNIInvokeJavaHandler(int handlerId, eErrorCode errorCode, const CHJSON *json) {
 	JNIEnv *env = JNIGetEnv();
 	if (env) {
-		jclass clazz = env->FindClass("com/clanofthecloud/cloudbuilder/JavaHandler");
+		jclass clazz = env->FindClass("cloud/xtralife/Clan/JavaHandler");
 		if (clazz) {
 			jmethodID method = env->GetStaticMethodID(clazz, "invokeJavaHandler", "(IILjava/lang/String;)V");
 			if (method) {

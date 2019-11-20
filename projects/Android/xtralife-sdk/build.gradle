@@ -19,22 +19,11 @@ android {
 		main {
 			manifest.srcFile 'AndroidManifest.xml'
 
-            aidl.srcDirs = ['../../../../sources/PlatformSpecific/Android/Aidl']
-            java.srcDirs = ['../../../../sources/PlatformSpecific/Android/Java']
+            aidl.srcDirs = ['../../../sources/PlatformSpecific/Android/Aidl']
+            java.srcDirs = ['../../../sources/PlatformSpecific/Android/Java']
         }
     }
 }
-
-// Tasks to build Android repository once assemble task is finished
-task installHeadersToRepository(type: Copy) {
-    from "${project.rootDir}/../../sources/include"
-    into "${project.rootDir}/../../repositories/xtralife/include"
-
-    doLast {
-        println "--- Copying include folder ---"
-    }
-}
-build.finalizedBy(installHeadersToRepository)
 
 android.libraryVariants.all { variant ->
     def variantName = variant.name.capitalize()
@@ -55,4 +44,8 @@ android.libraryVariants.all { variant ->
     }
 
     project.tasks.getByName(assembleTaskName).finalizedBy(project.tasks.getByName(copyTaskName))
+    project.tasks.getByName("repositoryReady").dependsOn(project.tasks.getByName(copyTaskName))
 }
+
+project.tasks.getByName("repositoryReady").dependsOn(project.tasks.getByName("installHeadersToRepository"))
+

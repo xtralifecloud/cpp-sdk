@@ -14,7 +14,8 @@ import java.io.File;
 
 public abstract class Clan {
 
-	private static final String TAG = "Cloudbuilder";
+	private static final String TAG = "XtraLife Java";
+	private static final String VERSION = "1.0.0.1";
 
     private static native int RegisterDevice(String aToken);
 
@@ -37,7 +38,7 @@ public abstract class Clan {
 		// TODO make this call mandatory
 		sActivity = activity;
 
-		Log.v(TAG, "Launching CloudBuilder Java v3.2.0");
+		Log.v(TAG, "Launching XtraLife Java " + VERSION);
 	}
 
 	/**
@@ -50,7 +51,7 @@ public abstract class Clan {
 
 	public static Context GetContext() {
 		if (sActivity == null) {
-			Log.e(TAG, "!!!!!! Failed to retrieve context. Check that you called CloudBuilder.Init. You may need a custom activity. App will crash. !!!!!!");
+			Log.e(TAG, "!!!!!! Failed to retrieve context. Check that you called Clan.Init. You may need a custom activity. App will crash. !!!!!!");
 			throw new RuntimeException("Failed to retrieve context, please check logs");
 		}
 		return sActivity;
@@ -70,7 +71,7 @@ public abstract class Clan {
 	}
 	// End Used
 
-	// Used in CloudBuilderJNI.cpp
+	// Used in XtraLifeJNI.cpp
 	// Handler is called with {"token": <the token: string>}
 	public static void QueryRegisterDevice() {
 	}
