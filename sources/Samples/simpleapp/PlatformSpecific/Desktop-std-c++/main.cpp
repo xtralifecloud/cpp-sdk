@@ -6,7 +6,6 @@
 //  Copyright © 2019 XtraLife. All rights reserved.
 //
 
-#include <iostream>
 #include <chrono>
 #include <thread>
 
