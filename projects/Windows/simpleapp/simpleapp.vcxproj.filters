@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="sources">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="sources\PlatformSpecific">
+      <UniqueIdentifier>{067c3775-c0d9-4a86-9ecb-274733da2660}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sources\PlatformSpecific\Desktop-std-c++">
+      <UniqueIdentifier>{dfbf145d-286b-40ea-ad70-ed791a8e67cd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\sources\Samples\simpleapp\PlatformSpecific\Desktop-std-c++\main.cpp">
+      <Filter>sources\PlatformSpecific\Desktop-std-c++</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\sources\Samples\simpleapp\MyGame.cpp">
+      <Filter>sources</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\sources\Samples\simpleapp\MyGame.h">
+      <Filter>sources</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
